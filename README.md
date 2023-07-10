@@ -16,7 +16,7 @@ Choose what you find more suitable for you:
 ## Contents
 - [Awesome Steam Deck](#awesome-steam-deck)
   - [Emulation](#emulation)
-  - [Script](#scripts)
+  - [Script](#script)
   - [Utility](#utility)
   - [Community](#community)
   - [Plugin](#plugin)
