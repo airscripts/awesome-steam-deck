@@ -4,12 +4,12 @@ A curated list of awesome Steam Deck software, resources and more.
 
 ## Contribute
 Contributions and suggestions about how to improve this project are welcome!  
-Please follow [our contribution guidelines](https://github.com/Airscripts/awesome-steam-deck/blob/main/CONTRIBUTING.md).
+Please follow [our contribution guidelines](https://github.com/airscripts/awesome-steam-deck/blob/main/CONTRIBUTING.md).
 
 ## Support
 If you want to support my work you can do it with the links below.  
 Choose what you find more suitable for you:  
-- [Support me on GitHub](https://github.com/sponsors/Airscripts)
+- [Support me on GitHub](https://github.com/sponsors/airscripts)
 - [Support me via ko-fi](https://ko-fi.com/airscript)
 - [Support me via linktr.ee](https://linktr.ee/airscript)
 
@@ -96,4 +96,4 @@ Choose what you find more suitable for you:
 [Back To Contents](#contents)
 
 ## License
-This repository is licensed under [GPL-3.0 License](https://github.com/Airscripts/awesome-steam-deck/blob/main/LICENSE).
+This repository is licensed under [GPL-3.0 License](https://github.com/airscripts/awesome-steam-deck/blob/main/LICENSE).
