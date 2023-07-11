@@ -16,6 +16,7 @@ Choose what you find more suitable for you:
 ## Contents
 - [Awesome Steam Deck](#awesome-steam-deck)
   - [Emulation](#emulation)
+  - [Software](#software)
   - [Script](#script)
   - [Utility](#utility)
   - [Community](#community)
@@ -34,6 +35,12 @@ Choose what you find more suitable for you:
 - [EmuDeck](https://github.com/dragoonDorise/EmuDeck): Emulator configurator.
 - [EmulationStation DE](https://gitlab.com/es-de/emulationstation-de): Frontend for browsing and launching games from various collections.
 - [PPSSPP](https://github.com/hrydgard/ppsspp): PSP Emulator.
+
+[Back To Contents](#contents)
+
+## Software
+- [Distrobox](https://github.com/89luca89/distrobox): Use any Linux distribution inside your terminal.
+- [rwfus](https://github.com/ValShaped/rwfus): Read and write OverlayFS for Steam Deck.
 
 [Back To Contents](#contents)
 
@@ -92,6 +99,7 @@ Choose what you find more suitable for you:
 ## Accessory
 - [Spigen Rugged Armor Protective Case](https://www.amazon.com/Protective-Shock-Absorption-Anti-Scratch-Accessories-nintendo-switch/dp/B0B75N73N9/): Suggested protective case.
 - [Maglass Screen Protector](https://www.amazon.com/Magglass-Tempered-Designed-Protector-Anti-Glare/dp/B09X82S4XL/): Suggested screen protector.
+- [JSAUX Cooling Fans](https://jsaux.com/products/fan-cooler-for-steam-deck-gp0200): Cooling fans for reducing overall temperatures.
 
 [Back To Contents](#contents)
 
