@@ -22,6 +22,7 @@ Choose what you find more suitable for you:
   - [Plugin](#plugin)
   - [Launcher](#launcher)
   - [Guide](#guide)
+  - [Remote Play](#remote-play)
   - [Hardware](#hardware)
   - [Accessory](#accessory)
   - [Content Creator](#content-creator)
@@ -73,12 +74,12 @@ Choose what you find more suitable for you:
 - [Install Windows On microSD](https://wagnerstechtalk.com/sd-windows/): How to install Windows on microSD.
 - [Activate SFTP](https://www.youtube.com/watch?v=Cb1U0_KbtLQ): Transfer Files From PC to Deck with SSH.
 - [Install NonSteamLaunchers-On-Steam-Deck](https://www.steamdeckgaming.net/post/easy-launchers-install-on-steam-deck): How to install NonSteamLaunchers.
+- [Install Chiaki](https://pimylifeup.com/steam-deck-ps5-remote-play/): How to setup Chiaki.
 
 [Back To Contents](#contents)
 
-## Remote play
+## Remote Play
 - [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki) Free and Open Source Software Client for PlayStation 4 and PlayStation 5 Remote Play
-- [Install Chiaki](https://pimylifeup.com/steam-deck-ps5-remote-play/): How to setup Chiaki.
 
 [Back To Contents](#contents)
 
