@@ -63,6 +63,7 @@ Choose what you find more suitable for you:
 - [Lutris](https://lutris.net/): Open gaming platform.
 - [Heroic](https://heroicgameslauncher.com/): Epic Games and GOG launcher.
 - [Bottles](https://github.com/bottlesdevs/Bottles): Run Windows software and games under Linux.
+- [NonSteamLaunchers-On-Steam-Deck](https://www.steamdeckgaming.net/post/easy-launchers-install-on-steam-deck): Automatic installation of the most popular launchers.
 
 [Back To Contents](#contents)
 
