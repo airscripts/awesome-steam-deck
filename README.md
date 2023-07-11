@@ -64,7 +64,7 @@ Choose what you find more suitable for you:
 - [Lutris](https://lutris.net/): Open gaming platform.
 - [Heroic](https://heroicgameslauncher.com/): Epic Games and GOG launcher.
 - [Bottles](https://github.com/bottlesdevs/Bottles): Run Windows software and games under Linux.
-- [NonSteamLaunchers-On-Steam-Deck](https://github.com/moraroy/NonSteamLaunchers-On-Steam-Deck): Automatic installation of the most popular launchers.
+- [NonSteamLaunchers](https://github.com/moraroy/NonSteamLaunchers-On-Steam-Deck): Automatic installation of the most popular launchers.
 
 [Back To Contents](#contents)
 
@@ -73,13 +73,13 @@ Choose what you find more suitable for you:
 - [SSD Replacement](https://www.ifixit.com/Guide/Steam+Deck+SSD+Replacement/148989): How to replace your SSD.
 - [Install Windows On microSD](https://wagnerstechtalk.com/sd-windows/): How to install Windows on microSD.
 - [Activate SFTP](https://www.youtube.com/watch?v=Cb1U0_KbtLQ): Transfer Files From PC to Deck with SSH.
-- [Install NonSteamLaunchers-On-Steam-Deck](https://www.steamdeckgaming.net/post/easy-launchers-install-on-steam-deck): How to install NonSteamLaunchers.
+- [Install NonSteamLaunchers](https://www.steamdeckgaming.net/post/easy-launchers-install-on-steam-deck): How to install NonSteamLaunchers.
 - [Install Chiaki](https://pimylifeup.com/steam-deck-ps5-remote-play/): How to setup Chiaki.
 
 [Back To Contents](#contents)
 
 ## Remote Play
-- [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki) Free and Open Source Software Client for PlayStation 4 and PlayStation 5 Remote Play
+- [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki): Free and open source software client for PlayStation 4 and PlayStation 5 Remote Play.
 
 [Back To Contents](#contents)
 
