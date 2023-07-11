@@ -70,6 +70,7 @@ Choose what you find more suitable for you:
 - [Install EmuDeck](https://www.emudeck.com/#how_to_install): How to install EmuDeck.
 - [SSD Replacement](https://www.ifixit.com/Guide/Steam+Deck+SSD+Replacement/148989): How to replace your SSD.
 - [Install Windows On microSD](https://wagnerstechtalk.com/sd-windows/): How to install Windows on microSD.
+- [Install Chiaki](https://pimylifeup.com/steam-deck-ps5-remote-play/): How to install and setup Chiaki (client for ps4 and ps5 Remote Play).
 
 [Back To Contents](#contents)
 
