@@ -4,7 +4,6 @@ A curated list of awesome Steam Deck software, resources and more.
 ## Contents
 - [Emulation](#emulation)
 - [Software](#software)
-- [Script](#script)
 - [Utility](#utility)
 - [Community](#community)
 - [Plugin](#plugin)
@@ -14,7 +13,6 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Hardware](#hardware)
 - [Accessory](#accessory)
 - [Podcast](#podcast)
-- [Other](#other)
 
 ## Emulation
 - [EmuDeck](https://github.com/dragoonDorise/EmuDeck) - Emulator configurator.
@@ -24,9 +22,6 @@ A curated list of awesome Steam Deck software, resources and more.
 ## Software
 - [Distrobox](https://github.com/89luca89/distrobox) - Use any Linux distribution inside your terminal.
 - [rwfus](https://github.com/ValShaped/rwfus) - Read and write OverlayFS for Steam Deck.
-
-## Script
-- [Placeholder](#script) - Be the first to add something here.
 
 ## Utility
 - [Cryoutilities](https://github.com/CryoByte33/steam-deck-utilities) - Scripts and utilities to improve performance and manage storage.
@@ -71,9 +66,6 @@ A curated list of awesome Steam Deck software, resources and more.
 - [On Deck](https://open.spotify.com/show/5oH7NqKxSPiVFANLuYgDSn) - A podcast on Spotify by Nerdnest.
 - [Decked Up](https://open.spotify.com/show/4ZW6yNxludK6FZQwvQlfJX) - A podcast on Spotify by Mekel Kasanova.
 - [Fan The Deck](https://open.spotify.com/show/74eIOxJhDmmSZFbwlh7HIN) - A podcast on Spotify by Richard Alvarez.
-
-## Other
-- [Placeholder](#script) - Be the first to add something here.
 
 ## Contributing
 Contributions and suggestions about how to improve this project are welcome!  
