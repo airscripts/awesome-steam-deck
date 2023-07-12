@@ -53,6 +53,7 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Activate SFTP](https://www.youtube.com/watch?v=Cb1U0_KbtLQ) - Transfer Files From PC to Deck with SSH.
 - [Install NonSteamLaunchers](https://www.steamdeckgaming.net/post/easy-launchers-install-on-steam-deck) - How to install NonSteamLaunchers.
 - [Install Chiaki](https://pimylifeup.com/steam-deck-ps5-remote-play/) - How to setup Chiaki.
+- [Use Xbox Cloud Gaming](https://support.microsoft.com/en-us/topic/xbox-cloud-gaming-in-microsoft-edge-with-steam-deck-43dd011b-0ce8-4810-8302-965be6d53296) - How to use Xbox Cloud Gaming.
 
 ## Remote Play
 - [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki) - Free and open source software client for PlayStation 4 and PlayStation 5 Remote Play.
