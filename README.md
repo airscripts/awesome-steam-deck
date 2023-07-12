@@ -13,7 +13,7 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Remote Play](#remote-play)
 - [Hardware](#hardware)
 - [Accessory](#accessory)
-- [Content Creator](#content-creator)
+- [Podcast](#podcast)
 - [Other](#other)
 
 ## Emulation
@@ -66,8 +66,10 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Maglass Screen Protector](https://www.amazon.com/Magglass-Tempered-Designed-Protector-Anti-Glare/dp/B09X82S4XL/) - Suggested screen protector.
 - [JSAUX Cooling Fans](https://jsaux.com/products/fan-cooler-for-steam-deck-gp0200) - Cooling fans for reducing overall temperatures.
 
-## Content Creator
-- [Placeholder](#script) - Be the first to add something here.
+## Podcast
+- [On Deck](https://open.spotify.com/show/5oH7NqKxSPiVFANLuYgDSn) - A podcast on Spotify by Nerdnest.
+- [Decked Up](https://open.spotify.com/show/4ZW6yNxludK6FZQwvQlfJX) - A podcast on Spotify by Mekel Kasanova.
+- [Fan The Deck](https://open.spotify.com/show/74eIOxJhDmmSZFbwlh7HIN) - A podcast on Spotify by Richard Alvarez.
 
 ## Other
 - [Placeholder](#script) - Be the first to add something here.
