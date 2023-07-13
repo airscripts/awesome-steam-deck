@@ -40,6 +40,7 @@ A curated list of awesome Steam Deck software, resources and more.
 - [rwfus](https://github.com/ValShaped/rwfus) - Read and write OverlayFS for Steam Deck.
 - [BoilR](https://github.com/PhilipK/BoilR) - Synchronize non-Steam games with your Steam library.
 - [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager) - An app for managing ROMs in Steam.
+- [Discord Overlay](https://trigg.github.io/Discover/deckaddnonsteamgame) - Discord Overlay for Steam.
 
 ## Emulation
 - [EmuDeck](https://github.com/dragoonDorise/EmuDeck) - Emulator configurator.
