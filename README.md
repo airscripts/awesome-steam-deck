@@ -29,8 +29,8 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Activate SFTP](https://www.youtube.com/watch?v=Cb1U0_KbtLQ) - Transfer Files From PC to Deck with SSH.
 
 ## Hardware
-- [Sabrent Rocket 2230 SSD](https://www.amazon.com/SABRENT-Rocket-2230-Performance-SB-2130-1TB/dp/B0BQG6JCRP/) - Suggested SSD.
-- [SanDisk Extreme microSD](https://www.amazon.com/SanDisk-Extreme-microSDXC-Memory-Adapter/dp/B09X7MPX8L/) - Suggested microSD.
+- [Sabrent Rocket 2230 SSD](https://www.amazon.com/SABRENT-Rocket-2230-Performance-SB-2130-1TB/dp/B0BQG6JCRP/) - Suggested SSD made by Sabrent.
+- [SanDisk Extreme microSD](https://www.amazon.com/SanDisk-Extreme-microSDXC-Memory-Adapter/dp/B09X7MPX8L/) - Suggested microSD made by SanDisk.
 
 ## Accessory
 - [Spigen Rugged Armor Protective Case](https://www.amazon.com/Protective-Shock-Absorption-Anti-Scratch-Accessories-nintendo-switch/dp/B0B75N73N9/) - Suggested protective case.
