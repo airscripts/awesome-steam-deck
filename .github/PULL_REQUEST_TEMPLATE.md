@@ -1,5 +1,5 @@
 # Pull Request
-Compile all the informations written below to send a legitimate pull request to the repository!
+Compile all the information written below to send a legitimate pull request to the repository!
 
 ## Label:
 
