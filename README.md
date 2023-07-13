@@ -18,13 +18,15 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Podcast](#podcast)
 
 ## Guide
-- [Install EmuDeck](https://www.emudeck.com/#how_to_install) - How to install EmuDeck.
 - [SSD Replacement](https://www.ifixit.com/Guide/Steam+Deck+SSD+Replacement/148989) - How to replace your SSD.
+- [Install EmuDeck](https://www.emudeck.com/#how_to_install) - How to install EmuDeck.
+- [Install Windows](https://www.howtogeek.com/877293/how-to-install-windows-on-your-steam-deck/) - How to install Windows.
 - [Install Windows On microSD](https://wagnerstechtalk.com/sd-windows/) - How to install Windows on microSD.
-- [Activate SFTP](https://www.youtube.com/watch?v=Cb1U0_KbtLQ) - Transfer Files From PC to Deck with SSH.
-- [Install NonSteamLaunchers](https://www.steamdeckgaming.net/post/easy-launchers-install-on-steam-deck) - How to install NonSteamLaunchers.
+- [Install ProtonGE](https://steamdeckhq.com/tips-and-guides/the-proton-ge-steam-deck-guide/) - How to install ProtonGE.
 - [Install Chiaki](https://pimylifeup.com/steam-deck-ps5-remote-play/) - How to setup Chiaki.
 - [Use Xbox Cloud Gaming](https://support.microsoft.com/en-us/topic/xbox-cloud-gaming-in-microsoft-edge-with-steam-deck-43dd011b-0ce8-4810-8302-965be6d53296) - How to use Xbox Cloud Gaming.
+- [Install NonSteamLaunchers](https://www.steamdeckgaming.net/post/easy-launchers-install-on-steam-deck) - How to install NonSteamLaunchers.
+- [Activate SFTP](https://www.youtube.com/watch?v=Cb1U0_KbtLQ) - Transfer Files From PC to Deck with SSH.
 
 ## Hardware
 - [Sabrent Rocket 2230 SSD](https://www.amazon.com/SABRENT-Rocket-2230-Performance-SB-2130-1TB/dp/B0BQG6JCRP/) - Suggested SSD.
