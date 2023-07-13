@@ -2,45 +2,20 @@
 A curated list of awesome Steam Deck software, resources and more.
 
 ## Contents
-- [Emulation](#emulation)
-- [Software](#software)
-- [Utility](#utility)
-- [Community](#community)
-- [Plugin](#plugin)
-- [Launcher](#launcher)
 - [Guide](#guide)
-- [Remote Play](#remote-play)
 - [Hardware](#hardware)
 - [Accessory](#accessory)
+- [Software](#software)
+- [Emulation](#emulation)
+- [Launcher](#launcher)
+- [Remote](#remote)
+- [File Management](#file-management)
+- [Utility](#utility)
+- [Plugin](#plugin)
+- [Website](#website)
+- [Community](#community)
+- [Blog](#blog)
 - [Podcast](#podcast)
-
-## Emulation
-- [EmuDeck](https://github.com/dragoonDorise/EmuDeck) - Emulator configurator.
-- [EmulationStation DE](https://gitlab.com/es-de/emulationstation-de) - Frontend for browsing and launching games from various collections.
-- [PPSSPP](https://github.com/hrydgard/ppsspp) - PSP Emulator.
-- [Vita3K](https://github.com/Vita3K/Vita3K) - PSVita Emulator (still in an experimental phase).
-
-## Software
-- [Distrobox](https://github.com/89luca89/distrobox) - Use any Linux distribution inside your terminal.
-- [rwfus](https://github.com/ValShaped/rwfus) - Read and write OverlayFS for Steam Deck.
-
-## Utility
-- [Cryoutilities](https://github.com/CryoByte33/steam-deck-utilities) - Scripts and utilities to improve performance and manage storage.
-
-## Community
-- [r/SteamDeck](https://reddit.com/r/SteamDeck) - Official subreddit.
-- [Steam Deck Italia](https://t.me/SteamDeckIta) - Telegram italian community.
-- [protondb.com](https://protondb.com) - Official ProtonDB site with games reviews and compatibility lists.
-
-## Plugin
-- [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader) - Plugin launcher.
-- [Deckbrew Plugins](https://plugins.deckbrew.xyz/) - List of Deckbrew plugins.
-
-## Launcher
-- [Lutris](https://lutris.net/) - Open gaming platform.
-- [Heroic](https://heroicgameslauncher.com/) - Epic Games and GOG launcher.
-- [Bottles](https://github.com/bottlesdevs/Bottles) - Run Windows software and games under Linux.
-- [NonSteamLaunchers](https://github.com/moraroy/NonSteamLaunchers-On-Steam-Deck) - Automatic installation of the most popular launchers.
 
 ## Guide
 - [Install EmuDeck](https://www.emudeck.com/#how_to_install) - How to install EmuDeck.
@@ -51,9 +26,6 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Install Chiaki](https://pimylifeup.com/steam-deck-ps5-remote-play/) - How to setup Chiaki.
 - [Use Xbox Cloud Gaming](https://support.microsoft.com/en-us/topic/xbox-cloud-gaming-in-microsoft-edge-with-steam-deck-43dd011b-0ce8-4810-8302-965be6d53296) - How to use Xbox Cloud Gaming.
 
-## Remote Play
-- [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki) - Free and open source software client for PlayStation 4 and PlayStation 5 Remote Play.
-
 ## Hardware
 - [Sabrent Rocket 2230 SSD](https://www.amazon.com/SABRENT-Rocket-2230-Performance-SB-2130-1TB/dp/B0BQG6JCRP/) - Suggested SSD.
 - [SanDisk Extreme microSD](https://www.amazon.com/SanDisk-Extreme-microSDXC-Memory-Adapter/dp/B09X7MPX8L/) - Suggested microSD.
@@ -62,6 +34,60 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Spigen Rugged Armor Protective Case](https://www.amazon.com/Protective-Shock-Absorption-Anti-Scratch-Accessories-nintendo-switch/dp/B0B75N73N9/) - Suggested protective case.
 - [Maglass Screen Protector](https://www.amazon.com/Magglass-Tempered-Designed-Protector-Anti-Glare/dp/B09X82S4XL/) - Suggested screen protector.
 - [JSAUX Cooling Fans](https://jsaux.com/products/fan-cooler-for-steam-deck-gp0200) - Cooling fans for reducing overall temperatures.
+
+## Software
+- [Distrobox](https://github.com/89luca89/distrobox) - Use any Linux distribution inside your terminal.
+- [rwfus](https://github.com/ValShaped/rwfus) - Read and write OverlayFS for Steam Deck.
+- [BoilR](https://github.com/PhilipK/BoilR) - Synchronize non-Steam games with your Steam library.
+- [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager) - An app for managing ROMs in Steam.
+
+## Emulation
+- [EmuDeck](https://github.com/dragoonDorise/EmuDeck) - Emulator configurator.
+- [RetroDECK](https://github.com/XargonWan/RetroDECK) - All-in-one sandboxed application to play your retro games.
+- [EmulationStation DE](https://gitlab.com/es-de/emulationstation-de) - Frontend for browsing and launching games from various collections.
+- [PPSSPP](https://github.com/hrydgard/ppsspp) - PSP Emulator.
+- [Vita3K](https://github.com/Vita3K/Vita3K) - PS Vita Emulator.
+
+## Launcher
+- [Lutris](https://lutris.net/) - Open gaming platform.
+- [Heroic](https://heroicgameslauncher.com/) - Epic Games and GOG launcher.
+- [Bottles](https://github.com/bottlesdevs/Bottles) - Run Windows software and games under Linux.
+- [NonSteamLaunchers](https://github.com/moraroy/NonSteamLaunchers-On-Steam-Deck) - Automatic installation of the most popular launchers.
+
+## Remote
+- [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki) - Free and open source software client for PlayStation 4 and PlayStation 5 Remote Play.
+- [KDE Connect](https://github.com/KDE/kdeconnect-kde) - Multi-platform app that allows your devices to communicate.
+- [Steam Link](https://store.steampowered.com/app/353380/Steam_Link/) - Extend your Steam gaming experience to more devices.
+
+## File Management
+- [Deck Drive Manager](https://deckdrivemanager.com/) - Copy PC games from PC to Steam Deck drives.
+- [Syncthing](https://github.com/syncthing/syncthing) - Open source continuous file synchronization.
+- [OpenCloudSaves](https://github.com/DavidDeSimone/OpenCloudSaves) - A tool used for syncing your save games across your devices.
+
+## Utility
+- [Shortix](https://github.com/Jannomag/shortix) - A script that creates human readable symlinks for Proton game prefixes.
+- [Cryoutilities](https://github.com/CryoByte33/steam-deck-utilities) - Scripts and utilities to improve performance and manage storage.
+- [Steam Deck Shader Cache Killer](https://github.com/scawp/Steam-Deck.Shader-Cache-Killer) - Script to purge Steam Deck shader cache.
+- [Ludusavi](https://github.com/mtkennerly/ludusavi) - Backup tool for PC game saves.
+
+## Plugin
+- [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader) - Plugin launcher.
+- [Deckbrew Plugins](https://plugins.deckbrew.xyz/) - List of Deckbrew plugins.
+
+## Website
+- [Steam Deck](https://www.steamdeck.com/) - Official Steam Deck website.
+- [Great On Deck](https://store.steampowered.com/steamdeck/mygames) - A list of verified Steam Deck games.
+- [CheckMyDeck](https://checkmydeck.ofdgn.com/) - Check compatibility with Steam Deck of your games library.
+
+## Community
+- [r/SteamDeck](https://reddit.com/r/SteamDeck) - Official subreddit.
+- [Steam Deck Italia](https://t.me/SteamDeckIta) - Telegram italian community.
+- [protondb.com](https://protondb.com) - Official ProtonDB site with games reviews and compatibility lists.
+- [Steam Deck Community](https://steamdeck.community/) - An independent community.
+- [Steam Deck Discord](https://discord.com/channels/865611969661632521/) - A Discord community.
+
+## Blog
+- [Steam Deck Life](https://steamdecklife.com/) - A blog about Steam Deck.
 
 ## Podcast
 - [On Deck](https://open.spotify.com/show/5oH7NqKxSPiVFANLuYgDSn) - A podcast on Spotify by Nerdnest.
