@@ -18,6 +18,7 @@ A curated list of awesome Steam Deck software, resources and more.
 - [EmuDeck](https://github.com/dragoonDorise/EmuDeck) - Emulator configurator.
 - [EmulationStation DE](https://gitlab.com/es-de/emulationstation-de) - Frontend for browsing and launching games from various collections.
 - [PPSSPP](https://github.com/hrydgard/ppsspp) - PSP Emulator.
+- [Vita3K](https://github.com/Vita3K/Vita3K) - PSVita Emulator (still in an experimental phase).
 
 ## Software
 - [Distrobox](https://github.com/89luca89/distrobox) - Use any Linux distribution inside your terminal.
