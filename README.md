@@ -43,10 +43,19 @@ A curated list of awesome Steam Deck software, resources and more.
 
 ## Emulation
 - [EmuDeck](https://github.com/dragoonDorise/EmuDeck) - Emulator configurator.
+- [RetroArch](https://github.com/libretro/RetroArch) - Frontend for emulators, game engines and media players.
 - [RetroDECK](https://github.com/XargonWan/RetroDECK) - All-in-one sandboxed application to play your retro games.
 - [EmulationStation DE](https://gitlab.com/es-de/emulationstation-de) - Frontend for browsing and launching games from various collections.
+- [PCSX2](https://github.com/PCSX2/pcsx2) - PS2 Emulator.
+- [RPCS3](https://github.com/RPCS3/rpcs3) - PS3 Emulator.
 - [PPSSPP](https://github.com/hrydgard/ppsspp) - PSP Emulator.
 - [Vita3K](https://github.com/Vita3K/Vita3K) - PS Vita Emulator.
+- [bsnes](https://github.com/bsnes-emu/bsnes) - SNES Emulator.
+- [Dolphin](https://github.com/dolphin-emu/dolphin) - Gamecube/Wii Emulator.
+- [DeSmuME](https://github.com/TASEmulators/desmume) - Nintendo DS Emulator.
+- [Yuzu](https://github.com/yuzu-emu/yuzu) - Nintendo Switch Emulator.
+- [Ryujinx](https://github.com/Ryujinx/Ryujinx) - Nintendo Switch Emulator.
+- [xemu](https://github.com/xemu-project/xemu) - Xbox Emulator.
 
 ## Launcher
 - [Lutris](https://lutris.net/) - Open gaming platform.
