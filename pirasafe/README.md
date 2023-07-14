@@ -6,7 +6,6 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Hardware](#hardware)
 - [Accessory](#accessory)
 - [Software](#software)
-- [Emulation](#emulation)
 - [Launcher](#launcher)
 - [Remote](#remote)
 - [File Management](#file-management)
@@ -19,7 +18,6 @@ A curated list of awesome Steam Deck software, resources and more.
 
 ## Guide
 - [SSD Replacement](https://www.ifixit.com/Guide/Steam+Deck+SSD+Replacement/148989) - How to replace your SSD.
-- [Install EmuDeck](https://www.emudeck.com/#how_to_install) - How to install EmuDeck.
 - [Install Windows](https://www.howtogeek.com/877293/how-to-install-windows-on-your-steam-deck/) - How to install Windows.
 - [Install Windows On microSD](https://wagnerstechtalk.com/sd-windows/) - How to install Windows on microSD.
 - [Install ProtonGE](https://steamdeckhq.com/tips-and-guides/the-proton-ge-steam-deck-guide/) - How to install ProtonGE.
@@ -41,24 +39,7 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Distrobox](https://github.com/89luca89/distrobox) - Use any Linux distribution inside your terminal.
 - [rwfus](https://github.com/ValShaped/rwfus) - Read and write OverlayFS for Steam Deck.
 - [BoilR](https://github.com/PhilipK/BoilR) - Synchronize non-Steam games with your Steam library.
-- [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager) - An app for managing ROMs in Steam.
 - [Discord Overlay](https://trigg.github.io/Discover/deckaddnonsteamgame) - Discord Overlay for Steam.
-
-## Emulation
-- [EmuDeck](https://github.com/dragoonDorise/EmuDeck) - Emulator configurator.
-- [RetroArch](https://github.com/libretro/RetroArch) - Frontend for emulators, game engines and media players.
-- [RetroDECK](https://github.com/XargonWan/RetroDECK) - All-in-one sandboxed application to play your retro games.
-- [EmulationStation DE](https://gitlab.com/es-de/emulationstation-de) - Frontend for browsing and launching games from various collections.
-- [PCSX2](https://github.com/PCSX2/pcsx2) - PS2 Emulator.
-- [RPCS3](https://github.com/RPCS3/rpcs3) - PS3 Emulator.
-- [PPSSPP](https://github.com/hrydgard/ppsspp) - PSP Emulator.
-- [Vita3K](https://github.com/Vita3K/Vita3K) - PS Vita Emulator.
-- [bsnes](https://github.com/bsnes-emu/bsnes) - SNES Emulator.
-- [Dolphin](https://github.com/dolphin-emu/dolphin) - Gamecube/Wii Emulator.
-- [DeSmuME](https://github.com/TASEmulators/desmume) - Nintendo DS Emulator.
-- [Yuzu](https://github.com/yuzu-emu/yuzu) - Nintendo Switch Emulator.
-- [Ryujinx](https://github.com/Ryujinx/Ryujinx) - Nintendo Switch Emulator.
-- [xemu](https://github.com/xemu-project/xemu) - Xbox Emulator.
 
 ## Launcher
 - [Lutris](https://lutris.net/) - Open gaming platform.
