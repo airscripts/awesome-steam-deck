@@ -1,6 +1,6 @@
 # Awesome Steam Deck [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 Un elenco curato di fantastici software, risorse e altro per Steam Deck.  
-Disponibile in [inglese](../README.md), [italiano](./i18n/README.it-IT.md).
+Disponibile in [inglese](/README.md), [italiano](/i18n/README.it-IT.md).
 
 ## Contents
 - [Guide](#guide)
