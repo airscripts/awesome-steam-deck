@@ -2,7 +2,7 @@
 Un elenco curato di fantastici software, risorse e altro per Steam Deck.  
 Disponibile in [inglese](./README.md), [italiano](./README.it-IT.md).
 
-## Contents
+## Contenuti
 - [Guide](#guide)
 - [Hardware](#hardware)
 - [Accessori](#accessori)
