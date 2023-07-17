@@ -51,6 +51,7 @@ Disponibile in [inglese](./README.md), [italiano](./README.it-IT.md).
 ## Remote
 - [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki) - Software open source gratuito per remote play PlayStation 4 e PlayStation 5.
 - [KDE Connect](https://github.com/KDE/kdeconnect-kde) - Applicazione multipiattaforma che permette ai tuoi dispositivi di comunicare tra di loro.
+- [LocalSend](https://github.com/localsend/localsend) - Applicazione open source per condividere files tra dispositivi sulla tua rete locale.
 - [Steam Link](https://store.steampowered.com/app/353380/Steam_Link/) - Estendi la tua esperienza di gioco su Steam su piu' dispositivi.
 
 ## Gestione File
