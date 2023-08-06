@@ -1,6 +1,19 @@
 # Awesome Steam Deck [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 A curated list of awesome Steam Deck software, resources and more.  
 
+### Contributing
+Contributions and suggestions about how to improve this project are welcome!  
+Please follow [our contribution guidelines](https://github.com/airscripts/awesome-steam-deck/blob/main/CONTRIBUTING.md).
+
+### Support
+If you want to support my work you can do it with the links below.  
+Choose what you find more suitable for you:  
+- [Support me on GitHub](https://github.com/sponsors/airscripts)
+- [Support me via ko-fi](https://ko-fi.com/airscript)
+
+### License
+This repository is licensed under [CC0 License](https://github.com/airscripts/awesome-steam-deck/blob/main/LICENSE).
+
 ## Contents
 - [Guide](#guide)
 - [Hardware](#hardware)
@@ -106,17 +119,3 @@ A curated list of awesome Steam Deck software, resources and more.
 - [On Deck](https://open.spotify.com/show/5oH7NqKxSPiVFANLuYgDSn) - A podcast on Spotify by Nerdnest.
 - [Decked Up](https://open.spotify.com/show/4ZW6yNxludK6FZQwvQlfJX) - A podcast on Spotify by Mekel Kasanova.
 - [Fan The Deck](https://open.spotify.com/show/74eIOxJhDmmSZFbwlh7HIN) - A podcast on Spotify by Richard Alvarez.
-
-## Contributing
-Contributions and suggestions about how to improve this project are welcome!  
-Please follow [our contribution guidelines](https://github.com/airscripts/awesome-steam-deck/blob/main/CONTRIBUTING.md).
-
-## Supporting
-If you want to support my work you can do it with the links below.  
-Choose what you find more suitable for you:  
-- [Support me on GitHub](https://github.com/sponsors/airscripts)
-- [Support me via ko-fi](https://ko-fi.com/airscript)
-- [Support me via linktr.ee](https://linktr.ee/airscript)
-
-## Licensing
-This repository is licensed under [CC0 License](https://github.com/airscripts/awesome-steam-deck/blob/main/LICENSE).
