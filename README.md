@@ -18,9 +18,6 @@ Choose what you find more suitable for you:
 
 *As of my personal preference, I'do go with GitHub Sponsors.*
 
-### License
-This repository is licensed under [CC0 License](https://github.com/airscripts/awesome-steam-deck/blob/main/LICENSE).
-
 ## Contents
 - [Guide](#guide)
 - [Hardware](#hardware)
