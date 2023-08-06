@@ -1,11 +1,9 @@
 # Awesome Steam Deck [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 A curated list of awesome Steam Deck software, resources and more.  
 
-### Contributing
 Contributions and suggestions about how to improve this project are welcome!  
 Please follow [our contribution guidelines](https://github.com/airscripts/awesome-steam-deck/blob/main/CONTRIBUTING.md).
 
-### Support
 If you want to support my work you can do it following me, leaving a star, sharing my projects or also with the links below.  
 Choose what you find more suitable for you:  
 
