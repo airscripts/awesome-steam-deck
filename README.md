@@ -1,4 +1,8 @@
 # Awesome Steam Deck [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<h3 align="center">
+  <img src="./assets/images/steam-deck-logo.svg" width="64" alt="Logo"/><br/>
+</h3>
+
 > A curated list of awesome Steam Deck software, resources and more.  
 
 [Steam Deck](https://en.wikipedia.org/wiki/Steam_Deck) is a handheld gaming computer made by Valve.
