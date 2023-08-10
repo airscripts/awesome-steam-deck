@@ -1,6 +1,8 @@
 # Awesome Steam Deck [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 <h3 align="center">
-  <img src="./assets/images/steam-deck-logo.svg" width="64" alt="Logo"/><br/>
+  <a href="https://ghio.airscript.it/awesome-steam-deck/" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/images/steam-deck-logo.svg" width="64" alt="Logo"/><br/>
+  </a>
 </h3>
 
 > A curated list of awesome Steam Deck software, resources and more.  
@@ -13,10 +15,10 @@ Please follow [our contribution guidelines](https://github.com/airscripts/awesom
 If you want to support my work you can do it following me, leaving a star, sharing my projects or also with the links below.  
 Choose what you find more suitable for you:  
 
-<a href="https://sponsor.airscript.it" target="blank">
+<a href="https://sponsor.airscript.it" target="_blank" rel="noopener noreferrer">
   <img src="./assets/images/github-sponsors.svg" alt="GitHub Sponsors" width="30px" />
 </a>&nbsp;
-<a href="https://kofi.airscript.it" target="blank">
+<a href="https://kofi.airscript.it" target="_blank" rel="noopener noreferrer">
   <img src="./assets/images/kofi.svg" alt="Kofi" width="30px" />
 </a>&nbsp;
 
