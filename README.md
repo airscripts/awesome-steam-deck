@@ -12,7 +12,7 @@
 Contributions and suggestions about how to improve this project are welcome!  
 Please follow [our contribution guidelines](https://github.com/airscripts/awesome-steam-deck/blob/main/CONTRIBUTING.md).
 
-If you want to support my work you can do it following me, leaving a star, sharing my projects or also with the links below.  
+If you want to support my work you can do it following me, leaving a star, sharing my projects or also donating at the links below.  
 Choose what you find more suitable for you:  
 
 <a href="https://sponsor.airscript.it" target="_blank" rel="noopener noreferrer">
@@ -20,9 +20,7 @@ Choose what you find more suitable for you:
 </a>&nbsp;
 <a href="https://kofi.airscript.it" target="_blank" rel="noopener noreferrer">
   <img src="https://raw.githubusercontent.com/airscripts/assets/main/images/kofi.svg" alt="Kofi" width="30px" />
-</a>&nbsp;
-
-*As of my personal preference, I'do go with GitHub Sponsors.*
+</a>
 
 ## Contents
 - [Guide](#guide)
