@@ -1,7 +1,7 @@
 # Awesome Steam Deck [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 <h3 align="center">
   <a href="https://ghio.airscript.it/awesome-steam-deck/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/images/steam-deck-logo.svg" width="64" alt="Logo"/><br/>
+    <img src="https://raw.githubusercontent.com/airscripts/awesome-steam-deck/main/assets/images/steam-deck-logo.svg" width="64" alt="Logo"/><br/>
   </a>
 </h3>
 
@@ -16,10 +16,10 @@ If you want to support my work you can do it following me, leaving a star, shari
 Choose what you find more suitable for you:  
 
 <a href="https://sponsor.airscript.it" target="_blank" rel="noopener noreferrer">
-  <img src="./assets/images/github-sponsors.svg" alt="GitHub Sponsors" width="30px" />
+  <img src="https://raw.githubusercontent.com/airscripts/assets/main/images/github-sponsors.svg" alt="GitHub Sponsors" width="30px" />
 </a>&nbsp;
 <a href="https://kofi.airscript.it" target="_blank" rel="noopener noreferrer">
-  <img src="./assets/images/kofi.svg" alt="Kofi" width="30px" />
+  <img src="https://raw.githubusercontent.com/airscripts/assets/main/images/kofi.svg" alt="Kofi" width="30px" />
 </a>&nbsp;
 
 *As of my personal preference, I'do go with GitHub Sponsors.*
