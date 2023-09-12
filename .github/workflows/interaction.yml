@@ -1,0 +1,29 @@
+name: interaction
+
+on:
+  issues:
+    types: [opened]
+
+  pull_request:
+    branches: [main]
+    types: [opened]
+
+jobs:
+  interaction-checker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/first-interaction@main
+
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          issue-message: |
+            Hey there! Thank you kindly for filing an issue.
+            I'll reply back to you as soon as I can.
+
+          pr-message: |
+            Hey there! Thank you kindly for your contribution!
+            I'll review back as soon as I can.
