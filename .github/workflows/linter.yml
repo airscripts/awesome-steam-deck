@@ -1,4 +1,5 @@
-name: ci
+name: linter
+
 on:
   pull_request:
     branches: [main]
