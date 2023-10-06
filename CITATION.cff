@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: If you use this software in your work, please cite it using the following metadata
+title: Awesome Steam Deck
+authors:
+- family-names: Sardone
+  given-names: Francesco
+keywords:
+- credit
+- citation
+version: 1.1.0
+date-released: 2023-08-12
+license: CC0-1.0
+repository-code: https://github.com/airscripts/awesome-steam-deck
