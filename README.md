@@ -116,7 +116,7 @@ Choose what you find more suitable for you:
 
 ## Community
 - [r/SteamDeck](https://reddit.com/r/SteamDeck) - Official subreddit.
-- [r/EmuDeck](https://www.reddit.com/r/EmuDeck) - Subreddit of EmuDeck, emulators on steamdeck.
+- [r/EmuDeck](https://www.reddit.com/r/EmuDeck) - Subreddit of EmuDeck, emulators on Steam Deck.
 - [Steam Deck Italia](https://t.me/SteamDeckIta) - Telegram italian community.
 - [Steam Deck Espana](https://t.me/SteamDeckPortatil) - Telegram spanish community.
 - [Steam Deck Group](https://t.me/steamdecktalk) - Telegram chinese community.
