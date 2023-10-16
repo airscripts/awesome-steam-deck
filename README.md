@@ -48,7 +48,7 @@ Choose what you find more suitable for you:
 - [Use Xbox Cloud Gaming](https://support.microsoft.com/en-us/topic/xbox-cloud-gaming-in-microsoft-edge-with-steam-deck-43dd011b-0ce8-4810-8302-965be6d53296) - How to use Xbox Cloud Gaming.
 - [Install NonSteamLaunchers](https://www.steamdeckgaming.net/post/easy-launchers-install-on-steam-deck) - How to install NonSteamLaunchers.
 - [Activate SFTP](https://www.youtube.com/watch?v=Cb1U0_KbtLQ) - How to transfer files from PC to Steam Deck with SFTP.
-- [Install ProtonDB Badges Plugin](https://steamdecklife.com/2022/10/18/protondb-badges-steam-deck-plugin/) - How to install ProtonDB badges that gives you a Steam Deck compatibility rating from the ProtonDB website on each game in the Steam store.
+- [Install ProtonDB Badges Plugin](https://steamdecklife.com/2022/10/18/protondb-badges-steam-deck-plugin/) - How to install ProtonDB Badges Plugin which gives you games compatibility rating from the ProtonDB website.
 
 ## Hardware
 - [Sabrent Rocket 2230 SSD](https://www.amazon.com/SABRENT-Rocket-2230-Performance-SB-2130-1TB/dp/B0BQG6JCRP/) - Suggested SSD made by Sabrent.
