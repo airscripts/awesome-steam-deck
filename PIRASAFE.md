@@ -23,7 +23,7 @@ A curated list of awesome Steam Deck software, resources and more.
 - [Install ProtonGE](https://steamdeckhq.com/tips-and-guides/the-proton-ge-steam-deck-guide/) - How to install ProtonGE.
 - [Install Chiaki](https://pimylifeup.com/steam-deck-ps5-remote-play/) - How to setup Chiaki.
 - [Use Xbox Cloud Gaming](https://support.microsoft.com/en-us/topic/xbox-cloud-gaming-in-microsoft-edge-with-steam-deck-43dd011b-0ce8-4810-8302-965be6d53296) - How to use Xbox Cloud Gaming.
-- [Install NonSteamLaunchers](https://www.steamdeckgaming.net/post/easy-launchers-install-on-steam-deck) - How to install NonSteamLaunchers.
+- [Install NonSteamLaunchers](https://steamdeckhq.com/tips-and-guides/install-3rd-party-launchers-on-steam-deck/) - How to install NonSteamLaunchers.
 - [Activate SFTP](https://www.youtube.com/watch?v=Cb1U0_KbtLQ) - How to transfer files from PC to Steam Deck with SFTP.
 
 ## Hardware
