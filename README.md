@@ -94,6 +94,7 @@ Choose what you find more suitable for you:
 - [SteamOS Btrfs](https://gitlab.com/popsulfr/steamos-btrfs) - Convert the /home partition from ext4 to btrfs.
 - [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/) - Install and manage third-party compatibility tools for Steam Games.
 - [Clover](https://github.com/ryanrudolfoba/SteamDeck-Clover-dualboot) - Graphical boot manager for the Steam Deck.
+- [Steam Deck Printing ROOTLESS](https://github.com/Tymose/Steam-Deck-Printing-ROOTLESS) - Utility that lets you print pn the deck with no need root and survives updates as well.
 
 ## Emulation
 - [EmuDeck](https://github.com/dragoonDorise/EmuDeck) - Emulator configurator.
