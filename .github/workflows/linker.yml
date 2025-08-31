@@ -18,5 +18,6 @@ jobs:
         uses: lycheeverse/lychee-action@v1.10.0
 
         with:
+          args: --header "accept=*/*" --user-agent "curl" .
           fail: false
           
