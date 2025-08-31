@@ -18,12 +18,12 @@ jobs:
       - uses: actions/first-interaction@main
 
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
 
-          issue-message: |
+          issue_message: |
             Hey there! Thank you kindly for filing an issue.
             I'll reply back to you as soon as I can.
 
-          pr-message: |
+          pr_message: |
             Hey there! Thank you kindly for your contribution!
             I'll review back as soon as I can.
