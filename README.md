@@ -158,7 +158,6 @@ Choose what you find more suitable for you:
 - [Steam Deck Group](https://t.me/steamdecktalk) - Telegram chinese community.
 - [Steam Deck Чат](https://t.me/steamdeckschat) - Telegram russian community.
 - [protondb.com](https://protondb.com) - Official ProtonDB site with games reviews and compatibility lists.
-- [Steam Deck Community](https://steamdeck.community/) - An independent community.
 - [Steam Deck Discord](https://discord.com/channels/865611969661632521/) - A Discord community.
 - [Steam Deck Italia](https://www.facebook.com/groups/340493584341055/) - Facebook italian group.
 - [Steam Deck](https://www.facebook.com/groups/steamdeck/) - Facebook english group.

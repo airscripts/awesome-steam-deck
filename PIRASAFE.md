@@ -77,7 +77,6 @@ A curated list of awesome Steam Deck software, resources and more.
 - [r/SteamDeck](https://reddit.com/r/SteamDeck) - Official subreddit.
 - [Steam Deck Italia](https://t.me/SteamDeckIta) - Telegram italian community.
 - [protondb.com](https://protondb.com) - Official ProtonDB site with games reviews and compatibility lists.
-- [Steam Deck Community](https://steamdeck.community/) - An independent community.
 - [Steam Deck Discord](https://discord.com/channels/865611969661632521/) - A Discord community.
 
 ## Blog
