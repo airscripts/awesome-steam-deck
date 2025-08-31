@@ -21,6 +21,7 @@ jobs:
           args: >
             --header "Accept: text/html"
             --header "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+            --accept 200,301,302,307,308
             .
 
           fail: false
