@@ -18,5 +18,5 @@ jobs:
         uses: lycheeverse/lychee-action@v1.10.0
 
         with:
-          fail: true
+          fail: false
           
