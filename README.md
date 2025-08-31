@@ -109,7 +109,6 @@ Choose what you find more suitable for you:
 - [bsnes](https://github.com/bsnes-emu/bsnes) - SNES Emulator.
 - [Dolphin](https://github.com/dolphin-emu/dolphin) - Gamecube/Wii Emulator.
 - [DeSmuME](https://github.com/TASEmulators/desmume) - Nintendo DS Emulator.
-- [Ryujinx](https://github.com/Ryujinx/Ryujinx) - Nintendo Switch Emulator.
 - [xemu](https://github.com/xemu-project/xemu) - Xbox Emulator.
 
 ## Launcher
