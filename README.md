@@ -80,13 +80,13 @@ Choose what you find more suitable for you:
 - [UGREEN Dock](https://eu.ugreen.com/collections/docking-station/products/copy-of-snap-deal-ugreen-docking-station-for-steam-deck) - UGREEN Docking Station for Steam Deck.
 - [Extreme Rate Shells](https://extremerate.com/collections/steam-deck-shells) - Extreme Rate Steam Deck Shells.
 - [GamingCobra Shells](https://www.gamingcobra.com/collections/steam-deck-shells) - Gaming Cobra Steam Deck Shells.
-- [JSAUX Transparent Back Plate](https://jsaux.com/products/transparent-back-plate-for-steam-deck-pc0106) - JSAUX Transparent Back Plate for Steam Deck.
+- [JSAUX Transparent Back Plate](https://jsaux.com/products/transparent-back-plate-for-steam-deck-pc0106) - Transparent back plate for Steam Deck.
 - [Corsair K70 Pro Mini](https://www.amazon.com/dp/B0B4SW81GW/) - 60% wireless mechanical keyboard.
 - [Razer Viper V2 Pro](https://www.amazon.com/dp/B09VCR969M) - Premium gaming mouse with great set of features.
 - [8BitDo Wireless 2.4g Controller](https://www.amazon.com/dp/B0B9BR6H7N/) - Great controller for those who want a console-like gaming experience.
 - [HyperX Cloud II Wireless](https://www.amazon.com/dp/B00SAYCXWG/) - Value-for-money wireless headset for your Steam Deck.
 - [Razer Hammerhead (2021)](https://www.amazon.com/dp/B099LZ2BGB/) - Wireless earbuds for your Steam Deck.
-- [Acer Nitro XV272U Vbmiiprx 27" Monitor](https://www.amazon.com/dp/B09R26XXFW/) - 27-inch WQHD gaming monitor from Asus.
+- [Acer Nitro XV272U Vbmiiprx 27 Inch Monitor](https://www.amazon.com/dp/B09R26XXFW/) - 27-inch WQHD gaming monitor from Asus.
 - [ViewSonic VX1755](https://www.amazon.com/dp/B09CQJ39YS/) - Large-screen gaming experience with this portable gaming monitor from ViewSonic.
 - [Anker 7-in-1 USB-C Hub](https://www.amazon.com/dp/B07ZVKTP53) - 7-in-1 USB-C hub from Anker is a great alternative to a dedicated Steam Deck dock.
 - [Spigen Rugged Armor Case](https://www.amazon.com/dp/B0B75N73N9) - Protect your shiny-new Steam Deck from scratches and drops.
@@ -99,7 +99,7 @@ Choose what you find more suitable for you:
 - [rwfus](https://github.com/ValShaped/rwfus) - Read and write OverlayFS for Steam Deck.
 - [BoilR](https://github.com/PhilipK/BoilR) - Synchronize non-Steam games with your Steam library.
 - [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager) - An app for managing ROMs in Steam.
-- [Discord Overlay](https://trigg.github.io/Discover/deckaddnonsteamgame) - Discord Overlay for Steam.
+- [Discord Overlay](https://trigg.github.io/Discover/deckaddnonsteamgame) - Overlay for Discord on Steam.
 - [SteamOS Btrfs](https://gitlab.com/popsulfr/steamos-btrfs) - Convert the /home partition from ext4 to btrfs.
 - [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/) - Install and manage third-party compatibility tools for Steam Games.
 - [Clover](https://github.com/ryanrudolfoba/SteamDeck-Clover-dualboot) - Graphical boot manager for the Steam Deck.
@@ -174,7 +174,6 @@ Choose what you find more suitable for you:
 
 ## Storage Management
 - [Storage Cleaner](https://github.com/mcarlucci/decky-storage-cleaner) - Decky plugin to clean shader cache and temporary files.
-- [Warehouse](https://flathub.org/apps/io.github.flattool.Warehouse) - Modern Flatpak manager with clean UI.
 - [CompSize](https://github.com/kilobyte/compsize) - Check btrfs compression ratios on Steam Deck.
 
 ## Utility
@@ -186,24 +185,18 @@ Choose what you find more suitable for you:
 ## Accessibility
 - [Orca Screen Reader](https://orca.gnome.org/) - Screen reader for desktop mode.
 - [Magnus](https://github.com/stuartlangridge/magnus) - Screen magnifier utility for better visibility.
-- [Gamescope Color Management](https://github.com/ValveSoftware/gamescope) - Built-in colorblind filters and adjustments.
 - [Text-to-Speech Tools](https://wiki.archlinux.org/title/Speech_dispatcher) - System TTS for accessibility needs.
 
 ## Plugin
 - [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader) - Plugin launcher.
 - [Deckbrew Plugins](https://plugins.deckbrew.xyz) - List of Deckbrew plugins.
-- [CSS Loader](https://github.com/suchmememanyskill/SDH-CssLoader) - Apply custom themes to Steam Deck interface.
 - [PowerTools](https://git.ngram.ca/NG-SD-Plugins/PowerTools) - Advanced CPU, GPU, and power management.
-- [SimpleDeckyTDP](https://github.com/aarron-lee/SimpleDeckyTDP) - Simplified TDP controls for Steam Deck.
 - [VibrantDeck](https://github.com/libvibrant/vibrantDeck) - Control display saturation and vibrance.
-- [Audio Loader](https://github.com/EMERALD0874/SDH-AudioLoader) - Custom boot and suspend sounds.
 - [Pause Games](https://github.com/popsUlfr/SDH-PauseGames) - Pause any game, even those without native pause functionality.
 - [AutoFlatpaks](https://github.com/jurassicplayer/decky-autoflatpaks) - Automatically update Flatpak applications.
 - [SteamGridDB Plugin](https://github.com/SteamGridDB/decky-steamgriddb) - Browse and apply custom game artwork directly from Steam Deck.
 - [AutoSuspend](https://github.com/jurassicplayer/decky-autosuspend) - Automatically suspend Steam Deck after inactivity period.
 - [HLTB for Deck](https://github.com/hulkrelax/hltb-for-deck) - How Long to Beat integration showing game completion times.
-- [Storage Cleaner](https://github.com/mcarlucci/decky-storage-cleaner) - Clean shader cache and temporary files.
-- [PowerControl](https://github.com/mengmeet/PowerControl) - Advanced power profile management.
 - [MagicPods](https://magicpods.app/steamdeck) - A magic plugin for Decky Loader that lets you control your AirPods and Beats headphones in a comfortable way.
 
 ## Website
@@ -216,7 +209,6 @@ Choose what you find more suitable for you:
 - [ProtonDB](https://www.protondb.com/) - Community-driven game compatibility database.
 - [SteamDB](https://steamdb.info/) - Game database, price tracking, and statistics.
 - [SteamGridDB](https://www.steamgriddb.com/) - Custom artwork for Steam and non-Steam games.
-- [ShareDeck](https://sharedeck.games/) - Community database of Steam Deck performance settings.
 - [IsThereAnyDeal](https://isthereanydeal.com/) - Game price comparison across stores.
 - [PCGamingWiki](https://www.pcgamingwiki.com/) - Game fixes, tweaks, and configurations.
 - [HowLongToBeat](https://howlongtobeat.com/) - Game completion time estimates.
