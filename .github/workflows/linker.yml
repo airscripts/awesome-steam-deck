@@ -1,4 +1,4 @@
-name: linker
+name: Linker
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
 
 jobs:
   link:
+    name: Link
     runs-on: ubuntu-latest
 
     steps:

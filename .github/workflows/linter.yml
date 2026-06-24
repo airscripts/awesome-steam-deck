@@ -1,4 +1,4 @@
-name: linter
+name: Linter
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
 
 jobs:
   lint:
+    name: Lint
     runs-on: ubuntu-latest
 
     steps:
