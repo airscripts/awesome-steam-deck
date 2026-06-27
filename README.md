@@ -213,6 +213,8 @@ Choose what you find more suitable for you:
 - [IsThereAnyDeal](https://isthereanydeal.com/) - Game price comparison across stores.
 - [PCGamingWiki](https://www.pcgamingwiki.com/) - Game fixes, tweaks, and configurations.
 - [HowLongToBeat](https://howlongtobeat.com/) - Game completion time estimates.
+- [Mechachameleon.games](https://mechachameleon.games/) - Fan-made browser companion for Meccha Chameleon (Steam hide-and-seek by LEMORION). 10-min walkthrough, public-lobby etiquette, FPS boost & stutter fix for low-end PCs, and a color-matching camo lab for all 5 maps.
+- [Mechachameleon.games — Tools Safety Guide](https://mechachameleon.games/tools/) - Safety-first radar for Meccha Chameleon third-party tools (ESP trainers, FPS boosters, password archives, admin EXE risks, and safer alternatives).
 
 ## Community
 - [r/SteamDeck](https://reddit.com/r/SteamDeck) - Official subreddit.
