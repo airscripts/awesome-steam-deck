@@ -172,6 +172,7 @@ Choose what you find more suitable for you:
 - [Deck Drive Manager](https://deckdrivemanager.com/) - Copy PC games from PC to Steam Deck drives.
 - [Syncthing](https://github.com/syncthing/syncthing) - Open source continuous file synchronization.
 - [OpenCloudSaves](https://github.com/DavidDeSimone/OpenCloudSaves) - A tool used for syncing your save games across your devices.
+- [DeckTorrent](https://github.com/locoholy/DeckTorrent) - Background Transmission daemon and Decky plugin for persistent torrent downloads across Desktop and Game Mode.
 
 ## Storage Management
 - [Storage Cleaner](https://github.com/mcarlucci/decky-storage-cleaner) - Decky plugin to clean shader cache and temporary files.
@@ -184,6 +185,7 @@ Choose what you find more suitable for you:
 - [Ludusavi](https://github.com/mtkennerly/ludusavi) - Backup tool for PC game saves.
 
 ## Accessibility
+- [DeckVoice](https://github.com/locoholy/DeckVoice) - One-button push-to-talk voice typing for Steam Deck on KDE Plasma Wayland using Whisper.
 - [Orca Screen Reader](https://orca.gnome.org/) - Screen reader for desktop mode.
 - [Magnus](https://github.com/stuartlangridge/magnus) - Screen magnifier utility for better visibility.
 - [Text-to-Speech Tools](https://wiki.archlinux.org/title/Speech_dispatcher) - System TTS for accessibility needs.
