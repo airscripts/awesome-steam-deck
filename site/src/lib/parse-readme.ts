@@ -1,31 +1,33 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+
 import type {
-  Definition,
   List,
+  Root,
   ListItem,
   Paragraph,
+  Definition,
   PhrasingContent,
-  Root,
 } from "mdast";
-import { toString } from "mdast-util-to-string";
+
 import { unified } from "unified";
-import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
+import rehypeStringify from "rehype-stringify";
+import { toString } from "mdast-util-to-string";
 
 export interface Resource {
   id: string;
-  categoryId: string;
-  category: string;
-  name: string;
   url: string;
+  name: string;
+  domain: string;
+  category: string;
+  categoryId: string;
+  sourceOrder: number;
   descriptionHtml: string;
   descriptionText: string;
-  domain: string;
-  sourceOrder: number;
   source: { line: number; column: number };
 }
 
@@ -36,10 +38,10 @@ export interface Category {
 }
 
 export interface Catalog {
-  categories: Category[];
   resources: Resource[];
   resourceCount: number;
   categoryCount: number;
+  categories: Category[];
 }
 
 const markdown = unified().use(remarkParse).use(remarkGfm);
@@ -82,6 +84,7 @@ type LocatedNode = {
 
 function errorAt(message: string, node: LocatedNode): Error {
   const position = node.position?.start;
+
   return new Error(
     `README.md:${position?.line ?? 1}:${position?.column ?? 1}: ${message}`,
   );
@@ -95,16 +98,19 @@ function renderDescription(nodes: PhrasingContent[]): {
     if (index !== 0 || node.type !== "text") return node;
     return { ...node, value: node.value.replace(/^\s*[-–—:]\s*/, "") };
   });
+
   const text = toString(normalized).trim();
   const root: Root = {
     type: "root",
     children: [{ type: "paragraph", children: normalized }],
   };
+
   const rendered = String(toHtml.stringify(toHtml.runSync(root)))
     .replace(/^<p>/, "")
     .replace(/<\/p>$/, "")
     .replace(/<a\b[^>]*>/g, "")
     .replace(/<\/a>/g, "");
+
   return { html: rendered, text };
 }
 
@@ -117,6 +123,7 @@ function parseResource(
   const paragraph = item.children.find(
     (child): child is Paragraph => child.type === "paragraph",
   );
+
   if (!paragraph)
     throw errorAt(
       "resource entry must contain a Markdown link and description",
@@ -126,27 +133,32 @@ function parseResource(
   const linkIndex = paragraph.children.findIndex(
     (child) => child.type === "link" || child.type === "linkReference",
   );
+
   const link = linkIndex >= 0 ? paragraph.children[linkIndex] : undefined;
   if (!link || (link.type !== "link" && link.type !== "linkReference"))
     throw errorAt("resource entry must start with a Markdown link", item);
 
   const name = toString(link).trim();
   if (!name) throw errorAt("resource name cannot be empty", link);
+
   const linkUrl =
     link.type === "link"
       ? link.url
       : definitions.get(link.identifier.toLowerCase())?.url;
+
   if (!linkUrl)
     throw errorAt(
       `reference link "${link.type === "linkReference" ? link.identifier : ""}" is not defined`,
       link,
     );
+
   let url: URL;
   try {
     url = new URL(linkUrl);
   } catch {
     throw errorAt(`invalid resource URL "${linkUrl}"`, link);
   }
+
   if (url.protocol !== "http:" && url.protocol !== "https:") {
     throw errorAt(`unsafe resource URL scheme "${url.protocol}"`, link);
   }
@@ -154,56 +166,66 @@ function parseResource(
   const descriptionNodes = paragraph.children.slice(
     linkIndex + 1,
   ) as PhrasingContent[];
+
   const description = renderDescription(descriptionNodes);
   if (!description.text)
     throw errorAt("resource description cannot be empty", item);
 
   const position = item.position?.start ?? { line: 1, column: 1 };
+
   return {
-    id: `${category.id}-${sourceOrder}`,
+    name,
+    sourceOrder,
+    url: url.toString(),
     categoryId: category.id,
     category: category.name,
-    name,
-    url: url.toString(),
     descriptionHtml: description.html,
     descriptionText: description.text,
+    id: `${category.id}-${sourceOrder}`,
     domain: url.hostname.replace(/^www\./, ""),
-    sourceOrder,
     source: { line: position.line, column: position.column },
   };
 }
 
 export function parseReadme(markdownText: string): Catalog {
   const tree = markdown.parse(markdownText) as Root;
+
   const definitions = new Map(
     tree.children
       .filter((node): node is Definition => node.type === "definition")
       .map((definition) => [definition.identifier.toLowerCase(), definition]),
   );
+
   const categories: Category[] = [];
   const resources: Resource[] = [];
   const byHeading = new Map<string, Category>();
+
   let current: Category | undefined;
   let sourceOrder = 0;
 
   for (const node of tree.children) {
     if (node.type === "heading" && node.depth === 2) {
       const name = toString(node).trim();
+
       if (name.toLowerCase() === "contents") {
         current = undefined;
         continue;
       }
+
       const id = slugify(name);
       current = byHeading.get(id);
+
       if (!current) {
         current = { id, name, resources: [] };
         byHeading.set(id, current);
         categories.push(current);
       }
+
       continue;
     }
 
     if (!current || node.type !== "list") continue;
+
     for (const item of (node as List).children) {
       const resource = parseResource(item, current, sourceOrder++, definitions);
       current.resources.push(resource);
@@ -212,8 +234,8 @@ export function parseReadme(markdownText: string): Catalog {
   }
 
   return {
-    categories,
     resources,
+    categories,
     resourceCount: resources.length,
     categoryCount: categories.length,
   };

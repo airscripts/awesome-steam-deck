@@ -1,10 +1,11 @@
-import { fileURLToPath } from "node:url";
 import sitemap from "@astrojs/sitemap";
+import { fileURLToPath } from "node:url";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 
 const repoRoot = fileURLToPath(new URL("../", import.meta.url));
 const readmePath = fileURLToPath(new URL("../README.md", import.meta.url));
+
 const siteUrl =
   process.env.PUBLIC_SITE_URL || "https://awesome-steam-deck.vercel.app";
 
@@ -26,6 +27,11 @@ export default defineConfig({
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss(), readmeReloadPlugin],
+    resolve: {
+      alias: {
+        "@": fileURLToPath(new URL("./src", import.meta.url)),
+      },
+    },
     server: { fs: { allow: [repoRoot] } },
   },
 });

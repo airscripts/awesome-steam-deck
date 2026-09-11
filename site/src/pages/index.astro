@@ -1,17 +1,19 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { getGithubStars } from "../lib/github";
-import { loadCatalog } from "../lib/parse-readme";
+import { getGithubStars } from "@/lib/github";
+import { loadCatalog } from "@/lib/parse-readme";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import logoUrl from "../../../assets/images/steam-deck-logo.svg?url";
 
 const catalog = loadCatalog();
 const stars = await getGithubStars();
 const year = new Date().getFullYear();
 const isPreview = import.meta.env.VERCEL_ENV === "preview";
+
 const categories = catalog.categories.map(({ resources, ...category }) => ({
   ...category,
   count: resources.length,
 }));
+
 const serializedResources = JSON.stringify(catalog.resources).replace(
   /</g,
   "\\u003c",
@@ -40,6 +42,7 @@ const iconFor = (category: string) => {
     Blog: "newspaper",
     Podcast: "podcast",
   };
+
   return icons[category] ?? "circle-help";
 };
 ---
@@ -50,12 +53,14 @@ const iconFor = (category: string) => {
     <div class="shell header-inner">
       <a class="brand" href="/" aria-label="Awesome Steam Deck home">
         <img src={logoUrl} width="42" height="42" alt="" aria-hidden="true" />
+
         <span class="brand-copy"
           ><strong>Awesome Steam Deck</strong><span
             >Curated resources for your Deck</span
           ></span
         >
       </a>
+
       <nav class="header-actions" aria-label="Primary navigation">
         <a
           class="header-link"
@@ -64,6 +69,7 @@ const iconFor = (category: string) => {
           rel="noopener noreferrer"
           >Contribute<span class="new-tab-text"> (opens in a new tab)</span></a
         >
+
         <details class="theme-menu">
           <summary
             class="theme-trigger"
@@ -73,6 +79,7 @@ const iconFor = (category: string) => {
             <i data-lucide="sun" id="theme-trigger-icon"></i>
             <span class="sr-only">Choose color theme</span>
           </summary>
+
           <div class="theme-options" role="group" aria-label="Color theme">
             <label class="theme-choice">
               <input
@@ -86,6 +93,7 @@ const iconFor = (category: string) => {
                 >System</span
               >
             </label>
+
             <label class="theme-choice">
               <input
                 type="radio"
@@ -96,6 +104,7 @@ const iconFor = (category: string) => {
                 disabled
               /><i data-lucide="sun" aria-hidden="true"></i><span>Light</span>
             </label>
+
             <label class="theme-choice">
               <input
                 type="radio"
@@ -108,6 +117,7 @@ const iconFor = (category: string) => {
             </label>
           </div>
         </details>
+
         <a
           class="github-button"
           href="https://github.com/airscripts/awesome-steam-deck"
@@ -132,14 +142,17 @@ const iconFor = (category: string) => {
       <div class="hero-grid">
         <div>
           <div class="eyebrow">Steam Deck field guide</div>
+
           <h1 id="page-title" class="font-display">
             Find your next Deck upgrade.
           </h1>
+
           <p class="hero-copy">
             A carefully curated catalog of tools, guides, hardware, and
             communities for getting more from your Steam Deck.
           </p>
         </div>
+
         <div class="stats" aria-label="Catalog totals">
           <span class="stat"
             ><strong>{catalog.resourceCount}</strong> resources</span
@@ -158,6 +171,7 @@ const iconFor = (category: string) => {
           <label class="new-tab-text" for="resource-search"
             >Search resources</label
           >
+
           <input
             class="search-input"
             id="resource-search"
@@ -168,6 +182,7 @@ const iconFor = (category: string) => {
             data-requires-js
             disabled
           />
+
           <button
             class="clear-search"
             id="clear-search"
@@ -177,6 +192,7 @@ const iconFor = (category: string) => {
             hidden>Clear</button
           >
         </div>
+
         <div class="control-row">
           <div
             class="chip-row"
@@ -185,6 +201,7 @@ const iconFor = (category: string) => {
             aria-label="Active category filters"
           ></div>
         </div>
+
         <div class="control-row">
           <div class="results-meta">
             <div
@@ -195,6 +212,7 @@ const iconFor = (category: string) => {
             >
               Showing {catalog.resourceCount} resources
             </div>
+
             <button
               class="clear-all"
               id="clear-all"
@@ -204,6 +222,7 @@ const iconFor = (category: string) => {
               hidden>Clear all</button
             >
           </div>
+
           <div class="control-end">
             <button
               class="filter-trigger"
@@ -218,6 +237,7 @@ const iconFor = (category: string) => {
               ><span class="filter-count" id="filter-count" hidden>0</span
               ></button
             >
+
             <label class="sort-control" for="sort-select"
               ><span>Sort</span><select
                 class="sort-select"
@@ -233,6 +253,7 @@ const iconFor = (category: string) => {
           </div>
         </div>
       </div>
+
       <div class="interactive-error" id="interactive-error" role="alert">
         Interactive filtering is unavailable. The complete catalog remains
         readable below.
@@ -252,6 +273,7 @@ const iconFor = (category: string) => {
                     data-requires-js
                     disabled
                   />
+
                   <span>{category.name}</span>
                   <span class="category-count">{category.count}</span>
                 </>
@@ -259,6 +281,7 @@ const iconFor = (category: string) => {
             ))
           }
         </aside>
+
         <div class="resource-grid" id="resource-grid">
           {
             catalog.resources.map((resource) => (
@@ -282,14 +305,17 @@ const iconFor = (category: string) => {
                       <span class="resource-icon" aria-hidden="true">
                         <i data-lucide={iconFor(resource.category)} />
                       </span>
+
                       <span>{resource.category}</span>
                     </>
                   </div>
+
                   <h3>{resource.name}</h3>
                   <div
                     class="resource-description"
                     set:html={resource.descriptionHtml}
                   />
+
                   <div class="resource-footer">
                     <>
                       <span>{resource.domain}</span>
@@ -301,6 +327,7 @@ const iconFor = (category: string) => {
               </article>
             ))
           }
+
           <div class="empty-state" id="empty-state" hidden>
             <h2>No resources found</h2><p>
               Try a shorter search, remove a category, or reset all filters to
@@ -340,6 +367,7 @@ const iconFor = (category: string) => {
                   data-requires-js
                   disabled
                 />
+
                 <span>{category.name}</span>
                 <span class="category-count">{category.count}</span>
               </>
@@ -347,6 +375,7 @@ const iconFor = (category: string) => {
           ))
         }
       </div>
+
       <div class="drawer-footer">
         <button
           class="drawer-reset"
@@ -369,6 +398,7 @@ const iconFor = (category: string) => {
     <div class="shell footer-inner">
       <div class="footer-copy">
         <p class="eyebrow">Awesome Steam Deck</p>
+
         <p>
           Built from the project README, kept useful by the community, © {
             year
@@ -379,6 +409,7 @@ const iconFor = (category: string) => {
           >.
         </p>
       </div>
+
       <nav class="footer-links" aria-label="Footer navigation">
         <a
           href="https://github.com/airscripts/awesome-steam-deck"
