@@ -1,0 +1,48 @@
+name: Site
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "site/**"
+      - "assets/images/**"
+      - ".github/workflows/site.yml"
+      - ".github/workflows/verify.yml"
+      - ".github/workflows/build.yml"
+      - ".github/workflows/test.yml"
+
+  pull_request:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "site/**"
+      - "assets/images/**"
+      - ".github/workflows/site.yml"
+      - ".github/workflows/verify.yml"
+      - ".github/workflows/build.yml"
+      - ".github/workflows/test.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify
+    uses: ./.github/workflows/verify.yml
+
+  build:
+    name: Build
+    needs: verify
+    uses: ./.github/workflows/build.yml
+
+  test:
+    name: Test
+    needs: build
+    uses: ./.github/workflows/test.yml

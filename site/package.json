@@ -13,6 +13,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "format:check": "prettier --check 'src/**/*.{astro,ts,css}' 'tests/**/*.ts' '*.json' '*.mjs' '*.yaml' '*.md'",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",

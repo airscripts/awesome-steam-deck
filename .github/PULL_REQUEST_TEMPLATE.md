@@ -1,22 +1,24 @@
-# Pull Request
-Compile all the information written below to send a legitimate pull request to the repository!
+## Summary
 
-## Label:
+<!-- Describe the change and how it addresses the linked issue. -->
 
-### This PR is labeled as:
-*Choose only one and remember to select the label even on the right.*
+## Type
+
+<!-- Select one. -->
 
 - [ ] Feature
 - [ ] Bug
-- [ ] Other
+- [ ] Documentation
+- [ ] Style
+- [ ] Refactor
+- [ ] Performance
+- [ ] Test
+- [ ] Chore
+- [ ] Build
+- [ ] CI
 
-## Linked Issue
+## Linked Issues
 
-### This PR has the following linked issues:
-- Closes #;
-- ...
+<!-- Replace the number after Closes. -->
 
-## Solution
-
-### My solution is explained as follows:
-Write your solution here...
+- Closes #

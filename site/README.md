@@ -82,21 +82,24 @@ Do not edit generated `dist` output or commit `node_modules`.
 Required gates from the repository root:
 
 ```bash
-pnpm --dir site test
+pnpm --dir site format:check
 pnpm --dir site check
 pnpm --dir site build
+pnpm --dir site test
 pnpm --dir site test:e2e
 ```
 
 | Command | What it checks |
 | ------- | -------------- |
-| `pnpm --dir site test` | Parser baseline, malformed entries, and reference links |
+| `pnpm --dir site format:check` | Prettier formatting |
 | `pnpm --dir site check` | Astro and TypeScript diagnostics |
 | `pnpm --dir site build` | Production output contains the complete catalog |
+| `pnpm --dir site test` | Parser baseline, malformed entries, and reference links |
 | `pnpm --dir site test:e2e` | Search, external links, dialog focus, and serious accessibility violations |
 
-The Catalog GitHub Actions workflow runs the same install, test, type, build,
-and Playwright gates on changes to the README or this package.
+The Site GitHub Actions workflow runs those gates sequentially as Verify, Build,
+and Test on changes to the README or this package. Deployment is handled by
+Vercel, not GitHub Actions.
 
 ## Deployment
 
