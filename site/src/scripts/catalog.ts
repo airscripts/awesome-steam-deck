@@ -155,12 +155,12 @@ function init() {
 
   const drawerReset =
     document.querySelector<HTMLButtonElement>("#drawer-reset");
-  
+
   const drawerShow = document.querySelector<HTMLButtonElement>("#drawer-show");
   const checkboxes = [
     ...document.querySelectorAll<HTMLInputElement>("[data-category-checkbox]"),
   ];
-  
+
   if (
     !search ||
     !clearSearch ||
@@ -188,7 +188,7 @@ function init() {
         box.value,
     ]),
   );
-  
+
   const fuse = new Fuse(resources, {
     keys: [
       { name: "name", weight: 0.5 },
@@ -199,7 +199,7 @@ function init() {
     threshold: 0.3,
     ignoreLocation: true,
   });
-  
+
   let lastFocused: HTMLElement | null = null;
   let debounce: number | undefined;
   let sortExplicit = initialSort !== null;
@@ -208,25 +208,25 @@ function init() {
     checkboxes.forEach((box) => {
       box.checked = selected.has(box.value);
     });
-  
+
   const writeUrl = (replace = true) => {
     const next = new URL(window.location.href);
     next.search = "";
-  
+
     if (search.value.trim()) next.searchParams.set("q", search.value.trim());
     selected.forEach((category) =>
       next.searchParams.append("category", category),
     );
-  
+
     if (sortExplicit || search.value.trim())
       next.searchParams.set("sort", sort.value);
-  
+
     window.history[replace ? "replaceState" : "pushState"]({}, "", next);
   };
-  
+
   const renderChips = () => {
     activeFilters.replaceChildren();
-  
+
     selected.forEach((category) => {
       const name = categoryNames.get(category) || category;
       const chip = document.createElement("span");
@@ -241,56 +241,54 @@ function init() {
       icon.setAttribute("data-lucide", "x");
       icon.setAttribute("aria-hidden", "true");
       remove.append(icon);
-  
+
       remove.addEventListener("click", () => {
         const removeButtons = [
           ...activeFilters.querySelectorAll<HTMLButtonElement>(".chip button"),
         ];
-  
+
         const removedIndex = removeButtons.indexOf(remove);
         selected.delete(category);
         syncCheckboxes();
         render();
         writeUrl(false);
-  
+
         const nextButtons = [
           ...activeFilters.querySelectorAll<HTMLButtonElement>(".chip button"),
         ];
-  
+
         nextButtons[Math.min(removedIndex, nextButtons.length - 1)]?.focus();
         if (nextButtons.length === 0) search.focus();
       });
-  
+
       chip.append(label, remove);
       activeFilters.append(chip);
     });
-  
+
     filterCount.textContent = String(selected.size);
     filterCount.hidden = selected.size === 0;
-  
+
     filterTrigger.setAttribute(
       "aria-label",
-      selected.size
-        ? `Filter, ${selected.size} selected`
-        : "Filter",
+      selected.size ? `Filter, ${selected.size} selected` : "Filter",
     );
-  
+
     clearAll.hidden = selected.size === 0 && !search.value;
     createIcons({ icons: iconRegistry, root: activeFilters });
   };
-  
+
   const render = () => {
     const normalizedQuery = search.value.trim();
     const matches = normalizedQuery
       ? new Set(fuse.search(normalizedQuery).map(({ item }) => item.id))
       : null;
-  
+
     const visible = resources.filter(
       (resource) =>
         (!matches || matches.has(resource.id)) &&
         (selected.size === 0 || selected.has(resource.categoryId)),
     );
-  
+
     const sorted = [...visible].sort((a, b) =>
       sort.value === "az" || sort.value === "za"
         ? a.name.localeCompare(b.name) * (sort.value === "za" ? -1 : 1)
@@ -303,30 +301,30 @@ function init() {
               .findIndex(({ item }) => item.id === b.id)
           : a.sourceOrder - b.sourceOrder,
     );
-  
+
     const visibleIds = new Set(sorted.map((resource) => resource.id));
     cards.forEach((card) => {
       card.hidden = !visibleIds.has(card.dataset.resourceId || "");
     });
-  
+
     sorted.forEach((resource) => {
       const card = cards.find(
         (candidate) => candidate.dataset.resourceId === resource.id,
       );
       if (card) document.querySelector("#resource-grid")?.append(card);
     });
-  
+
     emptyState.hidden = visible.length > 0;
     clearSearch.hidden = !search.value;
     drawerShow.textContent = `Show ${visible.length} Resource${visible.length === 1 ? "" : "s"}`;
-  
+
     announce(
       `Showing ${visible.length} resource${visible.length === 1 ? "" : "s"}${normalizedQuery ? ` for “${normalizedQuery}”` : ""}`,
     );
-  
+
     renderChips();
   };
-  
+
   const reset = (push = false) => {
     search.value = "";
     selected.clear();
@@ -336,7 +334,7 @@ function init() {
     render();
     writeUrl(!push);
   };
-  
+
   let pageScrollY = 0;
   const lockPageScroll = () => {
     if (document.documentElement.classList.contains("dialog-open")) return;
@@ -344,7 +342,7 @@ function init() {
     document.documentElement.classList.add("dialog-open");
     document.body.style.top = `-${pageScrollY}px`;
   };
-  
+
   const unlockPageScroll = () => {
     if (!document.documentElement.classList.contains("dialog-open")) return;
     const y = pageScrollY;
@@ -352,19 +350,19 @@ function init() {
     document.body.style.removeProperty("top");
     window.scrollTo(0, y);
   };
-  
+
   const openDrawer = () => {
     lastFocused =
       document.activeElement instanceof HTMLElement &&
       document.activeElement !== document.body
         ? document.activeElement
         : filterTrigger;
-  
+
     lockPageScroll();
     filterDialog.showModal();
     drawerClose.focus();
   };
-  
+
   const closeDrawer = () => {
     if (filterDialog.open) filterDialog.close();
     lastFocused?.focus({ preventScroll: true });
@@ -374,29 +372,29 @@ function init() {
 
   const themeIconName = (theme: string) =>
     theme === "light" ? "sun" : theme === "dark" ? "moon" : "monitor";
-  
+
   const updateThemeIcon = (theme: string) => {
     const current = document.querySelector<HTMLElement>("#theme-trigger-icon");
     if (!current) return;
-  
+
     const replacement = document.createElement("i");
     replacement.id = "theme-trigger-icon";
     replacement.setAttribute("data-lucide", themeIconName(theme));
     current.replaceWith(replacement);
     createIcons({ icons: iconRegistry });
   };
-  
+
   const setTheme = (theme: string) => {
     const nextTheme = ["light", "dark", "system"].includes(theme)
       ? theme
       : "system";
-  
+
     document.documentElement.dataset.theme = nextTheme;
     updateThemeIcon(nextTheme);
     themeChoices.forEach((choice) => {
       choice.checked = choice.dataset.themeChoice === nextTheme;
     });
-  
+
     try {
       localStorage.setItem("awesome-steam-deck-theme", nextTheme);
     } catch {
@@ -407,14 +405,14 @@ function init() {
   const relevanceOption = sort.querySelector<HTMLOptionElement>(
     'option[value="relevance"]',
   );
-  
+
   const syncSortOptions = () => {
     const hasSearch = Boolean(search.value.trim());
     if (relevanceOption) {
       relevanceOption.hidden = !hasSearch;
       relevanceOption.disabled = !hasSearch;
     }
-  
+
     if (!hasSearch && sort.value === "relevance") sort.value = "classic";
   };
 
@@ -424,11 +422,11 @@ function init() {
     : query
       ? "relevance"
       : "classic";
-  
+
   syncSortOptions();
   const initialTheme = document.documentElement.dataset.theme || "system";
   setTheme(initialTheme);
-  
+
   themeChoices.forEach((choice) =>
     choice.addEventListener("change", () => {
       setTheme(choice.value);
@@ -436,7 +434,7 @@ function init() {
       themeMenu.querySelector<HTMLElement>("summary")?.focus();
     }),
   );
-  
+
   themeMenu.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       event.preventDefault();
@@ -444,30 +442,30 @@ function init() {
       themeMenu.querySelector<HTMLElement>("summary")?.focus();
     }
   });
-  
+
   document.addEventListener("pointerdown", (event) => {
     if (!themeMenu.open) return;
     if (event.target instanceof Node && themeMenu.contains(event.target))
       return;
-  
+
     themeMenu.open = false;
   });
-  
+
   syncCheckboxes();
   render();
-  
+
   search.addEventListener("input", () => {
     syncSortOptions();
     if (!sortExplicit)
       sort.value = search.value.trim() ? "relevance" : "classic";
-  
+
     window.clearTimeout(debounce);
     debounce = window.setTimeout(() => {
       render();
       writeUrl(true);
     }, 150);
   });
-  
+
   clearSearch.addEventListener("click", () => {
     search.value = "";
     syncSortOptions();
@@ -476,7 +474,7 @@ function init() {
     writeUrl(true);
     search.focus();
   });
-  
+
   clearAll.addEventListener("click", () => reset());
   emptyReset?.addEventListener("click", () => reset());
   sort.addEventListener("change", () => {
@@ -484,19 +482,19 @@ function init() {
     render();
     writeUrl(false);
   });
-  
+
   checkboxes.forEach((checkbox) =>
     checkbox.addEventListener("change", () => {
       checkbox.checked
         ? selected.add(checkbox.value)
         : selected.delete(checkbox.value);
-  
+
       syncCheckboxes();
       render();
       writeUrl(false);
     }),
   );
-  
+
   filterTrigger.addEventListener("click", openDrawer);
   drawerClose.addEventListener("click", closeDrawer);
   drawerShow.addEventListener("click", closeDrawer);
@@ -506,26 +504,26 @@ function init() {
     render();
     writeUrl(false);
   });
-  
+
   filterDialog.addEventListener("cancel", (event) => {
     event.preventDefault();
     closeDrawer();
   });
-  
+
   filterDialog.addEventListener("click", (event) => {
     if (event.target === filterDialog) closeDrawer();
   });
-  
+
   window.addEventListener("popstate", () => {
     const current = new URLSearchParams(window.location.search);
     search.value = current.get("q") || "";
     selected.clear();
     current.getAll("category").forEach((value) => selected.add(value));
     sortExplicit = current.has("sort");
-  
+
     sort.value =
       current.get("sort") || (search.value.trim() ? "relevance" : "classic");
-  
+
     syncSortOptions();
     syncCheckboxes();
     render();
@@ -534,51 +532,51 @@ function init() {
   const updateScrollTop = () => {
     scrollTop.hidden = window.scrollY < 480;
     const footerRect = footer.getBoundingClientRect();
-  
+
     const visibleFooter = Math.max(
       0,
       Math.min(window.innerHeight, footerRect.bottom) -
         Math.max(0, footerRect.top),
     );
-  
+
     document.documentElement.style.setProperty(
       "--footer-offset",
       `${visibleFooter}px`,
     );
   };
-  
+
   const updateLayoutMetrics = () => {
     const controlsRect = controls.getBoundingClientRect();
     const controlsBottom =
       controlsRect.top <= 0 ? Math.max(0, controlsRect.bottom) : 0;
-  
+
     document.documentElement.style.setProperty(
       "--controls-bottom",
       `${controlsBottom}px`,
     );
-  
+
     document.documentElement.style.setProperty(
       "--controls-height",
       `${controls.offsetHeight}px`,
     );
   };
-  
+
   const updateShell = () => {
     updateLayoutMetrics();
     updateScrollTop();
   };
-  
+
   const resizeObserver = new ResizeObserver(() => {
     updateLayoutMetrics();
     updateScrollTop();
   });
-  
+
   resizeObserver.observe(controls);
   resizeObserver.observe(footer);
   updateLayoutMetrics();
   window.addEventListener("scroll", updateShell, { passive: true });
   window.addEventListener("resize", updateShell, { passive: true });
-  
+
   scrollTop.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
@@ -587,7 +585,7 @@ function init() {
         : "smooth",
     });
   });
-  
+
   updateShell();
   document
     .querySelectorAll<HTMLElement>("[data-requires-js]")

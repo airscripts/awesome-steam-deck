@@ -46,10 +46,10 @@ catalog remains usable without it.
 
 ## Requirements
 
-| Tool | Version |
-| ---- | ------- |
-| Node.js | 24 or newer |
-| pnpm | 11.15.0 or newer |
+| Tool    | Version          |
+| ------- | ---------------- |
+| Node.js | 24 or newer      |
+| pnpm    | 11.15.0 or newer |
 
 Install dependencies from the repository root:
 
@@ -68,12 +68,12 @@ that file changes.
 
 ## Layout
 
-| Path | Responsibility |
-| ---- | -------------- |
-| [`src/lib/parse-readme.ts`](src/lib/parse-readme.ts) | README extraction |
-| [`src/lib/github.ts`](src/lib/github.ts) | Build-time GitHub metadata |
-| [`src/pages`](src/pages), [`src/layouts`](src/layouts), [`src/scripts`](src/scripts), [`src/styles`](src/styles) | Catalog UI |
-| [`tests`](tests) | Parser tests and browser coverage |
+| Path                                                                                                             | Responsibility                    |
+| ---------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| [`src/lib/parse-readme.ts`](src/lib/parse-readme.ts)                                                             | README extraction                 |
+| [`src/lib/github.ts`](src/lib/github.ts)                                                                         | Build-time GitHub metadata        |
+| [`src/pages`](src/pages), [`src/layouts`](src/layouts), [`src/scripts`](src/scripts), [`src/styles`](src/styles) | Catalog UI                        |
+| [`tests`](tests)                                                                                                 | Parser tests and browser coverage |
 
 Do not edit generated `dist` output or commit `node_modules`.
 
@@ -89,13 +89,13 @@ pnpm --dir site test
 pnpm --dir site test:e2e
 ```
 
-| Command | What it checks |
-| ------- | -------------- |
-| `pnpm --dir site format:check` | Prettier formatting |
-| `pnpm --dir site check` | Astro and TypeScript diagnostics |
-| `pnpm --dir site build` | Production output contains the complete catalog |
-| `pnpm --dir site test` | Parser baseline, malformed entries, and reference links |
-| `pnpm --dir site test:e2e` | Search, external links, dialog focus, and serious accessibility violations |
+| Command                        | What it checks                                                             |
+| ------------------------------ | -------------------------------------------------------------------------- |
+| `pnpm --dir site format:check` | Prettier formatting                                                        |
+| `pnpm --dir site check`        | Astro and TypeScript diagnostics                                           |
+| `pnpm --dir site build`        | Production output contains the complete catalog                            |
+| `pnpm --dir site test`         | Parser baseline, malformed entries, and reference links                    |
+| `pnpm --dir site test:e2e`     | Search, external links, dialog focus, and serious accessibility violations |
 
 The Site GitHub Actions workflow runs those gates sequentially as Verify, Build,
 and Test on changes to the README or this package. Deployment is handled by
@@ -136,10 +136,10 @@ useful, sponsor ongoing curation through
 
 This package is dual licensed:
 
-| Material | License | File |
-| -------- | ------- | ---- |
-| Curated list content from the root README | CC0 1.0 | [`../LICENSE`](../LICENSE) |
-| Site source, styles, tests, and tooling in this directory | MIT | [`LICENSE`](LICENSE) |
+| Material                                                  | License | File                       |
+| --------------------------------------------------------- | ------- | -------------------------- |
+| Curated list content from the root README                 | CC0 1.0 | [`../LICENSE`](../LICENSE) |
+| Site source, styles, tests, and tooling in this directory | MIT     | [`LICENSE`](LICENSE)       |
 
 The generated catalog HTML includes derived list content. Reuse of that content
 follows the root CC0 dedication. Reuse of the site implementation follows MIT.
