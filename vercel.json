@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm --dir site build",
+  "outputDirectory": "site/dist",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . site/"
+}

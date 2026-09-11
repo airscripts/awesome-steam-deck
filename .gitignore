@@ -1,1 +1,6 @@
 .opencode
+site/node_modules/
+site/.astro/
+site/dist/
+site/test-results/
+site/playwright-report/

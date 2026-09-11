@@ -1,0 +1,57 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const {
+  title = "Awesome Steam Deck",
+  description = "A searchable catalog of software, hardware, guides, and community resources for Steam Deck.",
+  canonical = Astro.url.href,
+  noindex = false,
+} = Astro.props;
+const socialImage = new URL("/social-card.svg", Astro.site ?? Astro.url).href;
+---
+
+<!doctype html>
+<html lang="en" data-theme="system">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#0b1017" />
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{title}</title>
+    <script is:inline>
+      (() => {
+        try {
+          document.documentElement.classList.add("js");
+          const saved = localStorage.getItem("awesome-steam-deck-theme");
+          const theme =
+            saved === "light" || saved === "dark" || saved === "system"
+              ? saved
+              : "system";
+          document.documentElement.dataset.theme = theme;
+        } catch {
+          document.documentElement.classList.add("js");
+          /* Storage may be unavailable; system CSS remains the fallback. */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

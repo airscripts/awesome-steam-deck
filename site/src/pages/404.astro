@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Page not found — Awesome Steam Deck"
+  description="The page you requested could not be found."
+>
+  <main
+    class="shell"
+    style="min-height: 70vh; display: grid; place-items: center; text-align: center;"
+  >
+    <section aria-labelledby="not-found-title">
+      <div class="eyebrow">404 / Off the map</div>
+      <h1
+        id="not-found-title"
+        class="font-display"
+        style="font-size: clamp(2.5rem, 8vw, 5rem); margin: .6rem 0;"
+      >
+        That route drifted away.
+      </h1>
+      <p class="hero-copy" style="margin-inline: auto;">
+        The resource you’re looking for isn’t here, but the catalog is ready
+        when you are.
+      </p>
+      <a class="github-button" href="/" style="margin-top: 1.25rem;"
+        >Return to catalog</a
+      >
+    </section>
+  </main>
+</BaseLayout>

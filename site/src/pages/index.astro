@@ -1,0 +1,424 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getGithubStars } from "../lib/github";
+import { loadCatalog } from "../lib/parse-readme";
+import logoUrl from "../../../assets/images/steam-deck-logo.svg?url";
+
+const catalog = loadCatalog();
+const stars = await getGithubStars();
+const year = new Date().getFullYear();
+const isPreview = import.meta.env.VERCEL_ENV === "preview";
+const categories = catalog.categories.map(({ resources, ...category }) => ({
+  ...category,
+  count: resources.length,
+}));
+const serializedResources = JSON.stringify(catalog.resources).replace(
+  /</g,
+  "\\u003c",
+);
+
+const iconFor = (category: string) => {
+  const icons: Record<string, string> = {
+    Guide: "book-open",
+    Hardware: "cpu",
+    Accessory: "package",
+    Software: "app-window",
+    Performance: "gauge",
+    Customization: "palette",
+    "Power Management": "battery-charging",
+    Emulation: "gamepad-2",
+    Launcher: "rocket",
+    Remote: "radio",
+    "File Management": "folder",
+    "Storage Management": "hard-drive",
+    Utility: "wrench",
+    Accessibility: "accessibility",
+    Plugin: "puzzle",
+    Website: "globe-2",
+    Community: "users",
+    "Video Content": "video",
+    Blog: "newspaper",
+    Podcast: "podcast",
+  };
+  return icons[category] ?? "circle-help";
+};
+---
+
+<BaseLayout noindex={isPreview}>
+  <a class="skip-link" href="#catalog">Skip to catalog</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="Awesome Steam Deck home">
+        <img src={logoUrl} width="42" height="42" alt="" aria-hidden="true" />
+        <span class="brand-copy"
+          ><strong>Awesome Steam Deck</strong><span
+            >Curated resources for your Deck</span
+          ></span
+        >
+      </a>
+      <nav class="header-actions" aria-label="Primary navigation">
+        <a
+          class="header-link"
+          href="https://github.com/airscripts/awesome-steam-deck/blob/main/CONTRIBUTING.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Contribute<span class="new-tab-text"> (opens in a new tab)</span></a
+        >
+        <details class="theme-menu">
+          <summary
+            class="theme-trigger"
+            id="theme-trigger"
+            aria-label="Choose color theme"
+          >
+            <i data-lucide="sun" id="theme-trigger-icon"></i>
+            <span class="sr-only">Choose color theme</span>
+          </summary>
+          <div class="theme-options" role="group" aria-label="Color theme">
+            <label class="theme-choice">
+              <input
+                type="radio"
+                name="theme-choice"
+                value="system"
+                data-theme-choice="system"
+                data-requires-js
+                disabled
+              /><i data-lucide="monitor" aria-hidden="true"></i><span
+                >System</span
+              >
+            </label>
+            <label class="theme-choice">
+              <input
+                type="radio"
+                name="theme-choice"
+                value="light"
+                data-theme-choice="light"
+                data-requires-js
+                disabled
+              /><i data-lucide="sun" aria-hidden="true"></i><span>Light</span>
+            </label>
+            <label class="theme-choice">
+              <input
+                type="radio"
+                name="theme-choice"
+                value="dark"
+                data-theme-choice="dark"
+                data-requires-js
+                disabled
+              /><i data-lucide="moon" aria-hidden="true"></i><span>Dark</span>
+            </label>
+          </div>
+        </details>
+        <a
+          class="github-button"
+          href="https://github.com/airscripts/awesome-steam-deck"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`View Awesome Steam Deck on GitHub${stars === null ? "" : ` · ${stars} stars`}`}
+        >
+          <i data-lucide="git-fork" aria-hidden="true"></i><span>GitHub</span>{
+            stars !== null && (
+              <span class="github-stars" aria-hidden="true">
+                {stars.toLocaleString("en-US")} ★
+              </span>
+            )
+          }<span class="new-tab-text"> (opens in a new tab)</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="main-scroll">
+    <section class="shell hero" aria-labelledby="page-title">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Steam Deck field guide</div>
+          <h1 id="page-title" class="font-display">
+            Find your next Deck upgrade.
+          </h1>
+          <p class="hero-copy">
+            A carefully curated catalog of tools, guides, hardware, and
+            communities for getting more from your Steam Deck.
+          </p>
+        </div>
+        <div class="stats" aria-label="Catalog totals">
+          <span class="stat"
+            ><strong>{catalog.resourceCount}</strong> resources</span
+          ><span class="stat"
+            ><strong>{catalog.categoryCount}</strong> categories</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="shell" id="catalog" aria-labelledby="catalog-heading">
+      <h2 id="catalog-heading" class="new-tab-text">Resource catalog</h2>
+      <div class="controls">
+        <div class="search-wrap">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <label class="new-tab-text" for="resource-search"
+            >Search resources</label
+          >
+          <input
+            class="search-input"
+            id="resource-search"
+            type="search"
+            placeholder="Search resources..."
+            autocomplete="off"
+            spellcheck="false"
+            data-requires-js
+            disabled
+          />
+          <button
+            class="clear-search"
+            id="clear-search"
+            type="button"
+            data-requires-js
+            disabled
+            hidden>Clear</button
+          >
+        </div>
+        <div class="control-row">
+          <div
+            class="chip-row"
+            id="active-filters"
+            role="list"
+            aria-label="Active category filters"
+          ></div>
+        </div>
+        <div class="control-row">
+          <div class="results-meta">
+            <div
+              class="result-status"
+              id="result-status"
+              role="status"
+              aria-live="polite"
+            >
+              Showing {catalog.resourceCount} resources
+            </div>
+            <button
+              class="clear-all"
+              id="clear-all"
+              type="button"
+              data-requires-js
+              disabled
+              hidden>Clear all</button
+            >
+          </div>
+          <div class="control-end">
+            <button
+              class="filter-trigger"
+              id="filter-trigger"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="filter-dialog"
+              data-requires-js
+              disabled
+              ><i data-lucide="sliders-horizontal" aria-hidden="true"></i><span
+                id="filter-label">Filter</span
+              ><span class="filter-count" id="filter-count" hidden>0</span
+              ></button
+            >
+            <label class="sort-control" for="sort-select"
+              ><span>Sort</span><select
+                class="sort-select"
+                id="sort-select"
+                data-requires-js
+                disabled
+                ><option value="classic">Classic</option><option
+                  value="relevance">Relevance</option
+                ><option value="az">A-Z</option><option value="za">Z-A</option
+                ></select
+              ></label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="interactive-error" id="interactive-error" role="alert">
+        Interactive filtering is unavailable. The complete catalog remains
+        readable below.
+      </div>
+
+      <div class="catalog-layout">
+        <aside class="category-sidebar" aria-label="Filter by category">
+          <h2>Categories</h2>
+          {
+            categories.map((category) => (
+              <label class="category-option">
+                <>
+                  <input
+                    type="checkbox"
+                    value={category.id}
+                    data-category-checkbox
+                    data-requires-js
+                    disabled
+                  />
+                  <span>{category.name}</span>
+                  <span class="category-count">{category.count}</span>
+                </>
+              </label>
+            ))
+          }
+        </aside>
+        <div class="resource-grid" id="resource-grid">
+          {
+            catalog.resources.map((resource) => (
+              <article
+                class="resource-card"
+                data-resource-id={resource.id}
+                data-category-id={resource.categoryId}
+                data-name={resource.name}
+                data-description={resource.descriptionText}
+                data-domain={resource.domain}
+                data-order={resource.sourceOrder}
+              >
+                <a
+                  class="resource-card-link"
+                  href={resource.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="resource-meta">
+                    <>
+                      <span class="resource-icon" aria-hidden="true">
+                        <i data-lucide={iconFor(resource.category)} />
+                      </span>
+                      <span>{resource.category}</span>
+                    </>
+                  </div>
+                  <h3>{resource.name}</h3>
+                  <div
+                    class="resource-description"
+                    set:html={resource.descriptionHtml}
+                  />
+                  <div class="resource-footer">
+                    <>
+                      <span>{resource.domain}</span>
+                      <i data-lucide="external-link" class="external-icon" />
+                      <span class="new-tab-text"> (opens in a new tab)</span>
+                    </>
+                  </div>
+                </a>
+              </article>
+            ))
+          }
+          <div class="empty-state" id="empty-state" hidden>
+            <h2>No resources found</h2><p>
+              Try a shorter search, remove a category, or reset all filters to
+              browse the full catalog.
+            </p><button id="empty-reset" type="button"
+              >Reset search and filters</button
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog
+    class="filter-dialog"
+    id="filter-dialog"
+    aria-labelledby="filter-dialog-title"
+  >
+    <div class="drawer-inner">
+      <div class="drawer-header">
+        <h2 id="filter-dialog-title">Filter Categories</h2><button
+          class="drawer-close"
+          id="drawer-close"
+          type="button"
+          aria-label="Close category filters"><i data-lucide="x"></i></button
+        >
+      </div>
+      <div class="drawer-options">
+        {
+          categories.map((category) => (
+            <label class="category-option">
+              <>
+                <input
+                  type="checkbox"
+                  value={category.id}
+                  data-category-checkbox
+                  data-requires-js
+                  disabled
+                />
+                <span>{category.name}</span>
+                <span class="category-count">{category.count}</span>
+              </>
+            </label>
+          ))
+        }
+      </div>
+      <div class="drawer-footer">
+        <button
+          class="drawer-reset"
+          id="drawer-reset"
+          type="button"
+          data-requires-js
+          disabled>Reset</button
+        ><button
+          class="drawer-show"
+          id="drawer-show"
+          type="button"
+          data-requires-js
+          disabled>Show {catalog.resourceCount} Resources</button
+        >
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-copy">
+        <p class="eyebrow">Awesome Steam Deck</p>
+        <p>
+          Built from the project README, kept useful by the community, © {
+            year
+          } by <a
+            href="https://github.com/airscripts"
+            target="_blank"
+            rel="noopener noreferrer">Airscripts</a
+          >.
+        </p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a
+          href="https://github.com/airscripts/awesome-steam-deck"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Awesome Steam Deck on GitHub">GitHub</a
+        ><a
+          href="https://github.com/airscripts/awesome-steam-deck/blob/main/CONTRIBUTING.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Contribution guidelines">Contribute</a
+        ><a
+          href="https://sponsor.airscript.it"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub Sponsors">Sponsors</a
+        ><a
+          href="https://kofi.airscript.it"
+          target="_blank"
+          rel="noopener noreferrer">Ko-fi</a
+        >
+      </nav>
+    </div>
+  </footer>
+
+  <button
+    class="scroll-top"
+    id="scroll-top"
+    type="button"
+    aria-label="Scroll to top"
+    hidden
+  >
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script
+    is:inline
+    type="application/json"
+    id="catalog-data"
+    set:html={serializedResources}
+  />
+  <script src="../scripts/catalog.ts"></script>
+</BaseLayout>
