@@ -13,11 +13,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "format:check": "prettier --check 'src/**/*.{astro,ts,css}' 'tests/**/*.ts' '*.json' '*.mjs' '*.yaml' '*.md'",
+    "format:check": "prettier --check 'src/**/*.{astro,ts,css}' 'tests/**/*.ts' '*.json' '*.mjs' 'pnpm-workspace.yaml' '*.md'",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "format": "prettier --write 'src/**/*.{astro,ts,css}' 'tests/**/*.ts' '*.json' '*.mjs' '*.yaml' '*.md'"
+    "format": "prettier --write 'src/**/*.{astro,ts,css}' 'tests/**/*.ts' '*.json' '*.mjs' 'pnpm-workspace.yaml' '*.md'"
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.3.0",
