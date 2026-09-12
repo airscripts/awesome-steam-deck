@@ -1,10 +1,10 @@
-# Repository guidance
+# Repository Guidance
 
-## Mission and repository map
+## Mission And Repository Map
 
-This repository maintains the Awesome Steam Deck README and a static Astro catalog in `site/`. The root README is the catalog source; `site/src/lib/parse-readme.ts` is the only catalog extraction path. UI code lives in `site/src/pages`, `site/src/layouts`, `site/src/scripts`, and `site/src/styles`; parser and browser tests live in `site/tests`.
+This repository maintains the Awesome Steam Deck README and a static Astro catalog in `site/`. The root README is the catalog source. Site implementation guidance lives in `site/AGENTS.md`.
 
-## Non-negotiables
+## Non-Negotiables
 
 - Keep the catalog derived from the root README; never commit a second resource catalog.
 - Preserve resource order and duplicate occurrences when changing the parser or UI.
@@ -17,17 +17,17 @@ This repository maintains the Awesome Steam Deck README and a static Astro catal
 - Do not add a server adapter, public API, analytics, accounts, or client-side catalog fetching.
 - Do not bypass parser, type, build, or browser validation for catalog changes.
 
-## Quick-start commands
+## Quick-Start Commands
 
 Run from the repository root: `pnpm --dir site install`, `pnpm --dir site dev`, `pnpm --dir site test`, `pnpm --dir site check`, `pnpm --dir site build`, and `pnpm --dir site test:e2e`.
 
-## Change routing and architecture
+## Change Routing And Architecture
 
-README shape or extraction behavior belongs in `site/src/lib/parse-readme.ts` and `site/tests/parser.test.ts`. Build-time GitHub metadata belongs in `site/src/lib/github.ts`. Interaction changes belong in `site/src/scripts/catalog.ts` with browser coverage. Layout and visual tokens belong in `site/src/styles/global.css` and Astro components. Keep URL state in `q`, repeated `category`, and `sort` parameters.
+List submissions belong in the root README. Catalog extraction, UI, and site tests belong in `site/` and follow `site/AGENTS.md`.
 
-## Testing and validation
+## Testing And Validation
 
-Parser tests must cover the 20-category/158-occurrence baseline and malformed/reference-link cases. `astro check` must report no diagnostics; production builds must contain the complete catalog; browser tests cover search, external links, dialog focus, and serious/critical accessibility violations.
+`.github/workflows/site.yml` runs format, `astro check`, production build, Vitest parser tests, and Playwright coverage on README or `site/` changes.
 
 ## Free Region
 
