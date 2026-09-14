@@ -25,7 +25,7 @@
     "astro": "7.3.1",
     "@astrojs/sitemap": "3.7.4",
     "fuse.js": "7.5.0",
-    "lucide": "1.41.0",
+    "lucide": "1.46.0",
     "mdast-util-to-string": "4.0.0",
     "rehype-stringify": "10.0.1",
     "remark-gfm": "4.0.1",
