@@ -1,6 +1,6 @@
 # Awesome Steam Deck [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 <h3 align="center">
-  <a href="https://ghio.airscript.it/awesome-steam-deck/" target="_blank" rel="noopener noreferrer">
+  <a href="https://asd.airscript.it/" target="_blank" rel="noopener noreferrer">
     <img src="https://raw.githubusercontent.com/airscripts/awesome-steam-deck/main/assets/images/steam-deck-logo.svg" width="64" alt="Logo"/><br/>
   </a>
 </h3>
@@ -86,7 +86,7 @@ Choose what you find more suitable for you:
 - [8BitDo Wireless 2.4g Controller](https://www.amazon.com/dp/B0B9BR6H7N/) - Great controller for those who want a console-like gaming experience.
 - [HyperX Cloud II Wireless](https://www.amazon.com/dp/B00SAYCXWG/) - Value-for-money wireless headset for your Steam Deck.
 - [Razer Hammerhead (2021)](https://www.amazon.com/dp/B099LZ2BGB/) - Wireless earbuds for your Steam Deck.
-- [Acer Nitro XV272U Vbmiiprx 27 Inch Monitor](https://www.amazon.com/dp/B09R26XXFW/) - 27-inch WQHD gaming monitor from Asus.
+- [Acer Nitro XV272U Vbmiiprx 27 Inch Monitor](https://www.amazon.com/dp/B09R26XXFW/) - 27-inch WQHD gaming monitor from Acer.
 - [ViewSonic VX1755](https://www.amazon.com/dp/B09CQJ39YS/) - Large-screen gaming experience with this portable gaming monitor from ViewSonic.
 - [Anker 7-in-1 USB-C Hub](https://www.amazon.com/dp/B07ZVKTP53) - 7-in-1 USB-C hub from Anker is a great alternative to a dedicated Steam Deck dock.
 - [Spigen Rugged Armor Case](https://www.amazon.com/dp/B0B75N73N9) - Protect your shiny-new Steam Deck from scratches and drops.
