@@ -182,8 +182,8 @@ importers:
         specifier: 7.5.0
         version: 7.5.0
       lucide:
-        specifier: 1.41.0
-        version: 1.41.0
+        specifier: 1.47.0
+        version: 1.47.0
       mdast-util-to-string:
         specifier: 4.0.0
         version: 4.0.0
@@ -1639,8 +1639,8 @@ packages:
     resolution: {integrity: sha512-4pfM1Ff0x50o0tQwb5ucw/RzNyD0/YJME6IVcStalZuMWxdt3sR3huStTtxz4PUmvZfRguvDejasvQ2kifR11g==}
     engines: {node: 20 || >=22}
 
-  lucide@1.41.0:
-    resolution: {integrity: sha512-fIXP7JzC1vehdqOrMhwpbcXzX6CvUMuoDf16HY1FmC4sDBeuwrH2A0c6QmLn3wnSvaMchpEyM+JWijyTvOs3kw==}
+  lucide@1.47.0:
+    resolution: {integrity: sha512-gJoVJM5fvpBDGZTvhpJS9IEurz85HbD+wgOlCkXCIw35tHrqTxSdIYUN9sXvs7Aw3NCl67A+nlotNyoU4u7zOQ==}
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
@@ -3677,7 +3677,7 @@ snapshots:
 
   lru-cache@11.5.2: {}
 
-  lucide@1.41.0: {}
+  lucide@1.47.0: {}
 
   magic-string@0.30.21:
     dependencies:
