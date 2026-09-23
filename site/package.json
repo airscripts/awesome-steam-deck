@@ -39,7 +39,7 @@
     "@playwright/test": "1.63.0",
     "@tailwindcss/vite": "4.3.3",
     "@types/mdast": "4.0.4",
-    "prettier": "3.9.6",
+    "prettier": "3.9.9",
     "prettier-plugin-astro": "0.14.1",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
