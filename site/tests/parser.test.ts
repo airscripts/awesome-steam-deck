@@ -6,7 +6,7 @@ describe("README catalog parser", () => {
   it("extracts the complete current catalog in source order", () => {
     const catalog = parseReadme(fs.readFileSync(defaultReadmePath, "utf8"));
     expect(catalog.categoryCount).toBe(20);
-    expect(catalog.resourceCount).toBe(158);
+    expect(catalog.resourceCount).toBe(159);
 
     expect(catalog.resources[0]).toMatchObject({
       name: "SSD Replacement",
@@ -17,7 +17,7 @@ describe("README catalog parser", () => {
     expect(catalog.resources.at(-1)).toMatchObject({
       name: "Fan The Deck",
       category: "Podcast",
-      sourceOrder: 157,
+      sourceOrder: 158,
     });
   });
 

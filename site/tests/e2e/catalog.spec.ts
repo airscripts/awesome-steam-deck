@@ -11,7 +11,7 @@ test("catalog is searchable and preserves accessible card links", async ({
   ).toBeVisible();
 
   await expect(
-    page.locator(".stat").filter({ hasText: "158 resources" }),
+    page.locator(".stat").filter({ hasText: "159 resources" }),
   ).toBeVisible();
 
   await expect(
@@ -157,7 +157,7 @@ test("theme choice persists and static HTML remains available without JavaScript
 
   const noScriptPage = await noScriptContext.newPage();
   await noScriptPage.goto("/");
-  await expect(noScriptPage.locator("[data-resource-id]")).toHaveCount(158);
+  await expect(noScriptPage.locator("[data-resource-id]")).toHaveCount(159);
   await expect(noScriptPage.locator("#resource-search")).toBeDisabled();
   await expect(noScriptPage.locator("#filter-trigger")).toBeDisabled();
   await expect(noScriptPage.locator(".interactive-error")).toBeVisible();
@@ -287,10 +287,10 @@ test("category removal restores focus and mobile controls remain reachable", asy
   for (const checkbox of await drawerChecks.all()) await checkbox.check();
 
   await expect(
-    page.getByRole("button", { name: /show 158 resources/i }),
+    page.getByRole("button", { name: /show 159 resources/i }),
   ).toBeVisible();
 
-  await page.getByRole("button", { name: /show 158 resources/i }).click();
+  await page.getByRole("button", { name: /show 159 resources/i }).click();
   await page.locator("[data-resource-id]").last().scrollIntoViewIfNeeded();
   await expect(page.locator("[data-resource-id]").last()).toBeVisible();
 });
