@@ -34,7 +34,7 @@
     "unified": "11.0.5"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.13.0",
+    "@axe-core/playwright": "4.14.0",
     "@astrojs/check": "0.9.10",
     "@playwright/test": "1.63.0",
     "@tailwindcss/vite": "4.3.3",
